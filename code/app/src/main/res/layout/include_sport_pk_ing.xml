@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_ing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_pk_ing_data"
+    android:visibility="invisible">
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+        android:id="@+id/tv_ing_time"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="46dp"
+        android:textColor="@color/accent"/>
+
+    <!--  团队卡路里 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal">
+        <cn.fizzo.hub.fitness.ui.widget.rise.RiseNumberTextView
+            android:id="@+id/tv_ing_team_cal_1"
+            style="@style/PkIngTeamCalTx"
+            android:layout_marginLeft="76dp"
+            android:paddingLeft="142dp"
+            android:text="0"/>
+
+        <cn.fizzo.hub.fitness.ui.widget.rise.RiseNumberTextView
+            android:id="@+id/tv_ing_team_cal_2"
+            style="@style/PkIngTeamCalTx"
+            android:layout_marginLeft="262dp"
+            android:paddingLeft="168dp"
+            android:text="0"/>
+    </LinearLayout>
+
+    <!-- 团队列表 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="445dp"
+        android:layout_marginTop="54dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        
+        <LinearLayout
+            android:layout_width="592dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_ing_mover_team_1"
+                style="@style/RecyclerView"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="592dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_ing_mover_team_2"
+                style="@style/RecyclerView"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

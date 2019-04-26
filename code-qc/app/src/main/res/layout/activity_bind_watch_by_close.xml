@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="779dp"
+        android:layout_height="463dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="129dp"
+        android:background="@drawable/bg_shape_common_30_radius"
+        android:gravity="center_horizontal">
+
+
+        <include
+            android:id="@+id/v_scan_none"
+            layout="@layout/include_bind_watch_by_close_scan_none" />
+
+        <include
+            android:id="@+id/v_scan_one"
+            layout="@layout/include_bind_watch_by_close_scan_one" />
+
+        <include
+            android:id="@+id/v_scan_ok"
+            layout="@layout/include_bind_watch_bg_close_bind_ok" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="181dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1076dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/bg_tips_back" />
+
+
+</LinearLayout>

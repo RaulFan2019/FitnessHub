@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <View
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:background="@drawable/ic_bind_ok"
+        android:layout_marginTop="55dp"/>
+
+    <View
+        android:layout_width="147dp"
+        android:layout_height="28dp"
+        android:background="@drawable/ic_bind_ok_tx"
+        android:layout_marginTop="24dp"/>
+
+    <View
+        style="@style/DividerTransparent"
+        android:layout_width="640dp"
+        android:layout_marginTop="37dp"/>
+
+    <LinearLayout
+        android:layout_width="640dp"
+        android:layout_height="133dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <cn.fizzo.hub.fitness.ui.widget.circular.CircularImage
+            android:id="@+id/iv_avatar"
+            android:layout_width="133dp"
+            android:layout_height="133dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="112dp"
+            android:orientation="vertical">
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                android:id="@+id/tv_bind_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                android:id="@+id/tv_bind_ant"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                android:id="@+id/tv_bind_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

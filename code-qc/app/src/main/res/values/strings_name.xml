@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="name_time">时间</string>
+    <string name="name_mover_count">人数</string>
+    <string name="name_duration">时长(min)</string>
+    <string name="name_cal">消耗</string>
+    <string name="name_point">锻炼点数</string>
+    <string name="name_power">锻炼强度(%)</string>
+    <string name="name_avg_hr">平均心率</string>
+    <string name="name_max_hr">最高心率</string>
+    <string name="name_hr">绝对心率</string>
+    <string name="name_duration_with_min">时长（分钟）</string>
+
+    <string name="name_mover_count_group_training_detail">锻炼人数：</string>
+    <string name="name_cal_group_training_detail">卡路里：</string>
+    <string name="name_point_group_training_detail">锻炼点数：</string>
+    <string name="name_power_group_training_detail">平均锻炼强度：</string>
+    <string name="name_duration_group_training_detail">锻炼时长：</string>
+    <string name="name_avg_hr_group_training_detail">平均心率：</string>
+    <string name="name_max_hr_group_training_detail">最高心率：</string>
+
+    <string name="name_report_summary_duration">累积时长</string>
+    <string name="name_report_summary_cal">累积卡路里</string>
+    <string name="name_report_summary_point">累积锻炼点数</string>
+    <string name="name_report_summary_effort">平均锻炼强度</string>
+
+    <string name="name_report_summary_list_title_sort">排名</string>
+    <string name="name_report_summary_list_title_duration">时长（min）</string>
+    <string name="name_report_summary_list_title_cal">消耗(Kcal)</string>
+    <string name="name_report_summary_list_title_point">点数</string>
+    <string name="name_report_summary_list_title_avg_hr">平均心率</string>
+    <string name="name_report_summary_list_title_max_hr">最高心率</string>
+    <string name="name_report_summary_list_title_power">锻炼强度</string>
+
+</resources>

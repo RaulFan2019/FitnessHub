@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 自由锻炼统计数据 -->
+    <style name="DarkSportFreeTitleTotalLy">
+        <item name="android:layout_width">171dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">#162043</item>
+    </style>
+
+    <style name="DarkSportFreeTitleTotalIcon">
+        <item name="android:layout_width">32.5dp</item>
+        <item name="android:layout_height">33.8dp</item>
+        <item name="android:layout_marginLeft">19dp</item>
+    </style>
+
+    <style name="DarkSportFreeTitleTotalValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">21.2dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginLeft">9dp</item>
+    </style>
+
+    <style name="DarkSportFreeTitleTotalUnit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#d0d0d0</item>
+        <item name="android:layout_marginLeft">2dp</item>
+    </style>
+
+
+</resources>

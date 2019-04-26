@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sport_scan_to_bind">扫码绑定手环</string>
+    <string name="sport_change_hr_show_mode">左右键切换心率模式</string>
+
+    <string name="sport_free_weixin_bind">微信扫码绑定手环、开始锻炼</string>
+    <string name="sport_free_right_bar_scan">微信扫码绑定</string>
+    <string name="sport_free_today_data">今日数据</string>
+
+
+    <string name="sport_unbind">已解绑</string>
+    <string name="sport_group_training_know">知道了</string>
+    <string name="sport_group_current_count">当前锻炼人数</string>
+    <string name="sport_group_training_scan">微信扫描二维码绑定手环</string>
+    <string name="sport_group_training_ing">团课进行中...</string>
+    <string name="sport_group_training_time">团课时长</string>
+    <string name="sport_group_training_back_to_finish">点击返回键结束</string>
+    <string name="sport_group_training_total">团课统计</string>
+
+
+    <string name="sport_group_training_dlg_finish_title">结束本次团课？</string>
+    <string name="sport_pk_dlg_finish_title">结束本次 PK?</string>
+
+    <string name="sport_group_training_dlg_finish_btn">结束</string>
+
+    <string name="sport_hiit_list">间歇训练列表</string>
+
+    <string name="sport_pk_sort">排名</string>
+    <string name="sport_pk_name">姓名</string>
+    <string name="sport_pk_cal">消耗(Kcal)</string>
+    <string name="sport_pk_power">锻炼强度</string>
+</resources>

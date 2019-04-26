@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="date_week_1">SUNDAY</string>
+    <string name="date_week_2">MONDAY</string>
+    <string name="date_week_3">TUESDAY</string>
+    <string name="date_week_4">WEDNESDAY</string>
+    <string name="date_week_5">THURSDAY</string>
+    <string name="date_week_6">FRIDAY</string>
+    <string name="date_week_7">SATURDAY</string>
+
+
+</resources>

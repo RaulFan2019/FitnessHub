@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="report_summary_day_soft_tip">左、右键切换排序方式</string>
+
+
+    <string name="report_summary_soft_duration">累积时长</string>
+    <string name="report_summary_soft_cal">累积卡路里</string>
+    <string name="report_summary_soft_point">累积锻炼点数</string>
+    <string name="report_summary_soft_effort">平均锻炼强度</string>
+
+    <string name="report_summary_list_title_sort">排名</string>
+    <string name="report_summary_list_title_duration">时长（min）</string>
+    <string name="report_summary_list_title_cal">消耗（Kcal）</string>
+    <string name="report_summary_list_title_point">点数</string>
+    <string name="report_summary_list_title_avg_hr">平均心率</string>
+    <string name="report_summary_list_title_max_hr">最高心率</string>
+    <string name="report_summary_list_title_power">锻炼强度</string>
+
+    <string name="report_title_yesterday">昨日报告</string>
+    <string name="report_title_last_month">上月报告</string>
+    <string name="report_title_last_week">上周报告</string>
+    <string name="report_title_group_training">团课报告</string>
+
+    <string name="report_group_training_time">时间</string>
+    <string name="report_group_training_duration">时长（min）</string>
+    <string name="report_group_training_mover_count">人数</string>
+    <string name="report_group_training_cal">消耗</string>
+    <string name="report_group_training_point">锻炼点数</string>
+    <string name="report_group_training_power">强度（%）</string>
+    <string name="report_group_training_avg_hr">平均心率</string>
+    <string name="report_group_training_max_hr">最高心率</string>
+
+
+    <string name="report_group_training_no_data">抱歉，没有团课数据</string>
+    <string name="report_group_training_no_more_data">没有更多数据</string>
+
+    <string name="report_group_training_detail_mover_count">锻炼人数：</string>
+    <string name="report_group_training_detail_cal">卡路里：</string>
+    <string name="report_group_training_detail_point">锻炼点数：</string>
+    <string name="report_group_training_detail_power">平均锻炼强度：</string>
+
+    <string name="report_group_training_detail_title">锻炼报告数据</string>
+    <string name="report_group_training_detail_scan_to_see">移动设备查看</string>
+    <string name="report_group_training_detail_scan_tip">扫描二维码，查看本次锻炼 \n\n 记录，分享您锻炼的精彩</string>
+
+
+    <string name="report_group_training_mover_detail_duration">锻炼时长：</string>
+    <string name="report_group_training_mover_detail_duration_unit">min</string>
+    <string name="report_group_training_mover_detail_cal">卡路里：</string>
+    <string name="report_group_training_mover_detail_cal_unit">Kcal</string>
+    <string name="report_group_training_mover_detail_point">锻炼点数：</string>
+    <string name="report_group_training_mover_detail_avg_hr">平均心率：</string>
+    <string name="report_group_training_mover_detail_max_hr">最高心率：</string>
+    <string name="report_group_training_mover_detail_power">平均强度：</string>
+    <string name="report_group_training_mover_detail_chart_power">锻炼强度（%）</string>
+    <string name="report_group_training_mover_detail_chart_hr">绝对心率</string>
+    <string name="report_group_training_mover_detail_chart_duration">时长（分钟）</string>
+    <string name="report_group_training_mover_detail_change_tip">左右键切换学员</string>
+</resources>

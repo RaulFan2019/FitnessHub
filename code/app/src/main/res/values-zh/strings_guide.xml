@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="guide_activate_title">欢迎使用!</string>
+    <string name="guide_activate_tip">微信扫一扫激活FIZZO HUB</string>
+    <string name="guide_activate_set_network">设置网络</string>
+
+    <string name="guide_activate_title_qc">设备待激活..</string>
+    <string name="guide_activate_hub_num">设备编号</string>
+    <string name="guide_activate_tip_qc">请前往青橙健身房管理系统完成配置：场馆管理 >智能设备 >新增</string>
+
+
+    <string name="guide_instruction_last_step">上一步</string>
+    <string name="guide_instruction_next_step">下一步</string>
+
+
+    <string name="guide_instruction_title_1">了解 HUB 遥控器</string>
+    <string name="guide_instruction_title_2">如何正确的绑定你的手环</string>
+    <string name="guide_instruction_title_3">了解 HUB 学员锻炼界面</string>
+    <string name="guide_instruction_title_4">了解 HUB 学员锻炼界面</string>
+
+
+
+
+</resources>

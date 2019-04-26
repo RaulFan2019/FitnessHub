@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="73dp"
+    android:minHeight="73dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_sort"
+            android:layout_width="45dp"
+            android:layout_height="67dp"
+            android:layout_marginLeft="48dp"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:gravity="center_horizontal|center_vertical"/>
+
+        <FrameLayout
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="33dp">
+
+            <cn.fizzo.hub.fitness.ui.widget.circular.CircularImage
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@android:color/white" />
+
+            <cn.fizzo.hub.fitness.ui.widget.circular.CircularImage
+                android:id="@+id/iv_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/PkReportItemTv"
+            android:layout_width="184dp"
+            android:layout_marginLeft="32dp"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/tv_cal"
+            style="@style/ReportItemTv"
+            android:layout_width="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/DividerH"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="44dp"
+        android:alpha="0.5"/>
+
+</RelativeLayout>

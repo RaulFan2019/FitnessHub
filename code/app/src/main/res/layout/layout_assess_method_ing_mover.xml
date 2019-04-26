@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="136dp"
+    android:layout_height="157dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="132dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_assess_item_mover"
+        android:layout_gravity="center_horizontal">
+
+        <!-- 学员布局 -->
+        <LinearLayout
+            android:layout_width="132dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_marginTop="14dp">
+
+                <cn.fizzo.hub.fitness.ui.widget.circular.CircularImage
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:src="@android:color/white" />
+
+                <cn.fizzo.hub.fitness.ui.widget.circular.CircularImage
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center_horizontal|center_vertical" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+                android:id="@+id/tv_hr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/white"
+                android:textSize="38dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_state"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingRight="4dp"
+            android:background="@drawable/ic_assess_method_rest">
+            <TextView
+                android:id="@+id/tv_state_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="8dp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

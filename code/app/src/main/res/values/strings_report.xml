@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="report_summary_day_soft_tip">Left/right button to switch sorting order</string>
+
+
+    <string name="report_summary_soft_duration">Duration</string>
+    <string name="report_summary_soft_cal">Total Calorie</string>
+    <string name="report_summary_soft_point">Total Effort Point</string>
+    <string name="report_summary_soft_effort">Avg Intensity</string>
+
+    <string name="report_summary_list_title_sort">Rank</string>
+    <string name="report_summary_list_title_duration">Duration</string>
+    <string name="report_summary_list_title_cal">Kcal</string>
+    <string name="report_summary_list_title_point">Effort Point</string>
+    <string name="report_summary_list_title_avg_hr">Avg Hr</string>
+    <string name="report_summary_list_title_max_hr">Max Hr</string>
+    <string name="report_summary_list_title_power">Workout Intensity</string>
+
+    <string name="report_title_yesterday">yesterday report</string>
+    <string name="report_title_last_month">Last month report</string>
+    <string name="report_title_last_week">Last week report</string>
+    <string name="report_title_group_training">Group report</string>
+
+    <string name="report_group_training_time">Time</string>
+    <string name="report_group_training_duration">Duration</string>
+    <string name="report_group_training_mover_count">Number</string>
+    <string name="report_group_training_cal">Calorie</string>
+    <string name="report_group_training_point">Point</string>
+    <string name="report_group_training_power">Intensity（%）</string>
+    <string name="report_group_training_avg_hr">Avg</string>
+    <string name="report_group_training_max_hr">Max</string>
+
+
+    <string name="report_group_training_no_data">Sorry，No Data</string>
+    <string name="report_group_training_no_more_data">No more data</string>
+
+    <string name="report_group_training_detail_mover_count">Exercisers:</string>
+    <string name="report_group_training_detail_cal">Calorie:</string>
+    <string name="report_group_training_detail_point">Effort Point:</string>
+    <string name="report_group_training_detail_power">Avg Intensity:</string>
+
+    <string name="report_group_training_detail_title">Group report data</string>
+    <string name="report_group_training_detail_scan_to_see">Check the Mobile Device</string>
+    <string name="report_group_training_detail_scan_tip">Scan qrcode for workout \n\nsummary and sharing</string>
+
+
+    <string name="report_group_training_mover_detail_duration">Workout Duration:</string>
+    <string name="report_group_training_mover_detail_duration_unit">min</string>
+    <string name="report_group_training_mover_detail_cal">Calorie:</string>
+    <string name="report_group_training_mover_detail_cal_unit">Kcal</string>
+    <string name="report_group_training_mover_detail_point">Effort Point:</string>
+    <string name="report_group_training_mover_detail_avg_hr">Avg Hr:</string>
+    <string name="report_group_training_mover_detail_max_hr">Max Hr:</string>
+    <string name="report_group_training_mover_detail_power">Avg Intensity:</string>
+    <string name="report_group_training_mover_detail_chart_power">Intensity(%)</string>
+    <string name="report_group_training_mover_detail_chart_hr">Absoulute Heart rate(bpm)</string>
+    <string name="report_group_training_mover_detail_chart_duration">Duration(min)</string>
+    <string name="report_group_training_mover_detail_change_tip">Left/right button to switch trainee</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="course">课程</string>
+
+    <string name="course_unit_min">分钟</string>
+    <string name="course_power">强度</string>
+    <string name="course_unit_score">分</string>
+
+    <string name="course_unit_hot">热度</string>
+
+    <string name="course_detail_description">简介：</string>
+    <string name="course_detail_producer">提供商：</string>
+    <string name="course_detail_duration">时长：</string>
+    <string name="course_detail_intensity">强度：</string>
+    <string name="course_detail_hotrate">热度：</string>
+
+    <string name="course_has_buy">已购买</string>
+    <string name="course_download">下载</string>
+
+    <string name="course_download_error">下载失败</string>
+    <string name="course_download_again">重新下载</string>
+    <string name="course_start">开始课程</string>
+
+    <string name="course_play_zone">目标心率区间</string>
+    <string name="course_scan_no_device_title">没有扫描到设备</string>
+    <string name="course_scan_no_device_info">请确认手环在有效范围内开启</string>
+
+    <string name="course_exit_title">结束本次训练课程 ？</string>
+    <string name="course_exit">结束</string>
+</resources>

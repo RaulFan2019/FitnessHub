@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:focusable="true"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/v_load_more"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_progress_point"
+        android:visibility="invisible" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        android:id="@+id/tv_load_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:text="@string/loading_more"
+        android:textColor="#7F7F7F"
+        android:visibility="invisible" />
+</LinearLayout>
+

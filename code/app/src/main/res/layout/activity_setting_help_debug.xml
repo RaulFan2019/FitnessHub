@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SettingBaseLayout"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <cn.fizzo.hub.fitness.ui.widget.circular.CircularImage
+            android:id="@+id/iv_store"
+            android:layout_width="85dp"
+            android:layout_height="85dp" />
+
+        <LinearLayout
+            android:layout_width="681dp"
+            android:layout_marginLeft="13.2dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_store_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="17.2dp"/>
+            <TextView
+                android:id="@+id/tv_hub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="17.2dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="17.2dp"
+            android:text="编号："/>
+
+        <TextView
+            android:id="@+id/tv_serial_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="40dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="#2B292E"
+        android:textColor="@android:color/white"
+        android:textSize="26dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="扫描灵敏度"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="146dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_sensitivity"
+            android:layout_width="817dp"
+            android:layout_height="66dp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="26dp"
+            android:textSize="40dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/bg_help_debug_sensitivity"/>
+
+        <Button
+            android:id="@+id/btn_sensitivity_down"
+            android:layout_marginLeft="13dp"
+            android:layout_width="113dp"
+            android:layout_height="74dp"
+            android:background="@drawable/selector_help_debug_sensitivity_down"/>
+
+        <Button
+            android:id="@+id/btn_sensitivity_up"
+            android:layout_width="113dp"
+            android:layout_height="74dp"
+            android:background="@drawable/selector_help_debug_sensitivity_up"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="#2B292E"
+        android:textColor="@android:color/white"
+        android:textSize="26dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="扫描到的设备"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_sign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="NO SIGN"
+            android:textColor="@android:color/white"
+            android:textSize="60dp" />
+
+    </ScrollView>
+
+</LinearLayout>

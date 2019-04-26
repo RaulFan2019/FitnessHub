@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bar"
+    android:layout_width="227dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_sport_group_right_bar"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!-- 二维码 -->
+    <LinearLayout
+        android:id="@+id/ll_code"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="42dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/iv_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center_horizontal"
+        android:text="@string/sport_group_current_count"
+        android:textColor="@android:color/white"
+        android:textSize="12dp" />
+
+    <!-- 当前锻炼人数 -->
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+        android:id="@+id/tv_curr_mover_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="38dp" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/sport_group_training_ing"
+        android:textColor="@android:color/white"
+        android:textSize="17dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:background="@drawable/ic_back" />
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="@string/sport_group_training_back_to_finish"
+            android:textColor="@android:color/white"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        android:id="@+id/tv_total_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="12dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/sport_group_training_total"/>
+
+    <!-- 团课锻炼数据 -->
+    <LinearLayout
+        android:id="@+id/ll_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical"
+        android:paddingLeft="82dp">
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+            android:id="@+id/tv_group_cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- -"
+            android:textColor="@android:color/white"
+            android:textSize="34dp" />
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+            android:id="@+id/tv_group_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="- -"
+            android:textColor="@android:color/white"
+            android:textSize="34dp" />
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+            android:id="@+id/tv_group_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="- -"
+            android:textColor="@android:color/white"
+            android:textSize="34dp" />
+    </LinearLayout>
+
+    <!-- 二维码 -->
+    <LinearLayout
+        android:id="@+id/ll_code_iwf"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_code_iwf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_mode"
+        android:layout_width="200dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="18dp" />
+</LinearLayout>

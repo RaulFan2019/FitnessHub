@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="date_week_1">星期天</string>
+    <string name="date_week_2">星期一</string>
+    <string name="date_week_3">星期二</string>
+    <string name="date_week_4">星期三</string>
+    <string name="date_week_5">星期四</string>
+    <string name="date_week_6">星期五</string>
+    <string name="date_week_7">星期六</string>
+
+
+</resources>

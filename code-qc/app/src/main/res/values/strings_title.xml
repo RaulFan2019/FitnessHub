@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_welcome">欢迎使用!</string>
+    <string name="title_about_us">关于我们</string>
+
+    <string name="title_bind_watch_by_phone">微信扫一扫绑定手环</string>
+
+    <string name="title_bind_watch_by_close_scan_none">请打开手环靠近FIZZO HUB</string>
+    <string name="title_bind_watch_bg_close_scan_one">微信扫一扫绑定手环</string>
+
+    <string name="title_dlg_finish_sport_group">结束本次团课?</string>
+
+    <string name="title_report_group_training_list">团课报告</string>
+    
+    <string name="title_scan_to_see">移动设备查看</string>
+
+    <string name="title_app_info">软件信息</string>
+    
+    <string name="title_wait_active_hub">设备待激活...</string>
+</resources>

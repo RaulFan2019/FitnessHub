@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/PkReportListTitle"
+        android:layout_marginLeft="55dp"
+        android:layout_width="170dp"
+        android:text="@string/sport_pk_sort"/>
+
+    <TextView
+        style="@style/PkReportListTitle"
+        android:layout_width="184dp"
+        android:text="@string/sport_pk_name"/>
+
+    <TextView
+        style="@style/PkReportListTitle"
+        android:layout_width="wrap_content"
+        android:text="@string/sport_pk_cal"/>
+
+</LinearLayout>

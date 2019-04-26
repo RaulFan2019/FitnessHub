@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="main_menu_tab_sport">锻炼</string>
+    <string name="main_menu_tab_report">报告</string>
+    <string name="main_menu_tab_bind">绑定</string>
+    <string name="main_menu_tab_setting">设置</string>
+    <string name="main_menu_tab_help">帮助</string>
+
+
+    <string name="main_menu_sport_name_free">自由锻炼</string>
+    <string name="main_menu_sport_name_group">团课锻炼</string>
+    <string name="main_menu_sport_name_course">课程锻炼</string>
+    <string name="main_menu_sport_name_test">体能测试</string>
+    <string name="main_menu_sport_name_hiit">间歇训练</string>
+
+    <string name="main_menu_sport_tip1_free">学员自由锻炼</string>
+    <string name="main_menu_sport_tip1_group">创建一个团课</string>
+    <string name="main_menu_sport_tip1_course">设定一个点数获得目标</string>
+    <string name="main_menu_sport_tip1_test">科学测试体能</string>
+    <string name="main_menu_sport_tip1_hiit">创建一个间歇训练课程</string>
+
+    <string name="main_menu_sport_tip2_free">学员心率都能在屏幕上实时显示</string>
+    <string name="main_menu_sport_tip2_group">锻炼结束学员能立刻获得锻炼报告</string>
+    <string name="main_menu_sport_tip2_course">锻炼中能看到学员的实时点数排名</string>
+    <string name="main_menu_sport_tip2_test">测试完成学员能立刻获得测试报告</string>
+    <string name="main_menu_sport_tip2_hiit">锻炼结束学员能立刻获得锻炼报告</string>
+
+    <string name="main_menu_report_name_group">团课报告</string>
+    <string name="main_menu_report_name_day">日报告</string>
+    <string name="main_menu_report_name_week">周报告</string>
+    <string name="main_menu_report_name_month">月报告</string>
+
+    <string name="main_menu_report_tip1_group">查看团课的锻炼报告</string>
+    <string name="main_menu_report_tip1_day">查看今日学员锻炼报告</string>
+    <string name="main_menu_report_tip1_week">查看本周学员的锻炼报告</string>
+    <string name="main_menu_report_tip1_month">查看本月的锻炼报告</string>
+
+    <string name="main_menu_report_tip2_group">教练可以整体把握锻炼强度和效果</string>
+    <string name="main_menu_report_tip2_day">可以查看学员锻炼点数和卡路里排行</string>
+    <string name="main_menu_report_tip2_week">教练可以查看本周学员锻炼排行</string>
+    <string name="main_menu_report_tip2_month">教练可以查看本月学员锻炼排行</string>
+
+    <string name="main_menu_bind_title_close">靠近HUB绑定</string>
+    <string name="main_menu_bind_title_input">输入编号绑定</string>
+
+    <string name="main_menu_bind_tip_close">适合所有支持ANT+协议的心率采集设备</string>
+    <string name="main_menu_bind_tip_input">仅适用于FIZZO手环</string>
+    <string name="main_menu_bind_tip_input_wuxipaobao">编号在心率手环侧面位置</string>
+
+    <string name="main_menu_setting_title_wifi">WIFI设置</string>
+    <string name="main_menu_setting_title_hub_group">HUB组设置</string>
+    <string name="main_menu_setting_title_help">帮助</string>
+    <string name="main_menu_setting_title_hiit">间歇训练设置</string>
+
+
+    <string name="main_menu_qc_name_sport">锻炼模式</string>
+    <string name="main_menu_qc_name_wifi">WIFI设置</string>
+    <string name="main_menu_qc_name_update">软件更新</string>
+    <string name="main_menu_qc_name_about_us">关于我们</string>
+</resources>

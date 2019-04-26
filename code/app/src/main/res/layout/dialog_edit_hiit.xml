@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="776dp"
+    android:layout_height="325dp"
+    android:background="@color/primary"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical">
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalButton
+        android:id="@+id/btn_edit_name"
+        style="@style/BtnDialog"
+        android:layout_marginTop="12dp"
+        android:text="@string/setting_hiit_edit_name" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalButton
+        android:id="@+id/btn_delete"
+        style="@style/BtnDialog"
+        android:layout_marginTop="12dp"
+        android:text="@string/setting_hiit_delete" />
+
+</LinearLayout>

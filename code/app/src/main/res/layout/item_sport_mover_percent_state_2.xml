@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="449dp"
+    android:layout_height="335dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="447dp"
+        android:layout_height="fill_parent"
+        android:layout_margin="1dp"
+        android:background="@drawable/bg_item_sport_mover_percent_0"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_mover_name"
+            style="@style/SportItemName"
+            android:layout_height="39dp"
+            android:layout_marginTop="8dp"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/SportHrLine">
+
+                <TextView
+                    android:id="@+id/tv_percent"
+                    style="@style/SportHrTv"
+                    android:paddingLeft="35dp"
+                    android:textSize="190dp" />
+
+                <TextView
+                    style="@style/SportHrPercentTv"
+                    android:textSize="44dp" />
+            </LinearLayout>
+
+            <!-- 个人信息 -->
+            <RelativeLayout
+                android:layout_width="157dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="29dp">
+
+                    <cn.fizzo.hub.fitness.ui.widget.circular.CircularImage
+                        android:id="@+id/iv_avatar"
+                        style="@style/SportAvatar" />
+
+                    <View
+                        android:id="@+id/v_mask"
+                        style="@style/SportAvatarMask"/>
+
+                    <TextView
+                        android:id="@+id/tv_ant"
+                        style="@style/SportAnt"
+                        android:layout_height="34dp"
+                        android:textSize="17dp"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_cal"
+                    style="@style/SportItemData"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="144dp"
+                    android:textSize="28dp" />
+
+                <TextView
+                    android:id="@+id/tv_point"
+                    style="@style/SportItemData"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="185dp"
+                    android:textSize="28dp" />
+
+                <TextView
+                    android:id="@+id/tv_hr"
+                    style="@style/SportItemData"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="225dp"
+                    android:textSize="28dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

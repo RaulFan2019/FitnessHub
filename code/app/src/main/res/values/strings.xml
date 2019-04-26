@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FizzoFitness</string>
+
+    <string name="loading">Loading...</string>
+    <string name="loading_more">Loading data....</string>
+
+    <string name="dialog_btn_confirm">confirm</string>
+    <string name="dialog_btn_cancel">cancel</string>
+
+    <string name="version_info"> \n
+        1. 改变主页操作模式\n</string>
+
+    <string name="unit_score">分</string>
+    <string name="unit_min">分钟</string>
+    <string name="unit_min_short">分</string>
+    <string name="unit_sec">秒</string>
+    <string name="unit_persons">people</string>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="window_net_error">网络链接故障，请检查网络状态！</string>
+
+
+</resources>

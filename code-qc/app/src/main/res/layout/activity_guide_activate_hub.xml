@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:text="@string/title_wait_active_hub"
+        android:textColor="@android:color/white"
+        android:textSize="27dp" />
+
+    <LinearLayout
+        android:id="@+id/fl_active_ing"
+        android:layout_width="779dp"
+        android:layout_height="463dp"
+        android:layout_marginTop="21dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/bg_shape_common_30_radius">
+
+        <View
+            android:layout_width="213dp"
+            android:layout_height="57dp"
+            android:background="@drawable/ic_qc_logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"/>
+
+        <View
+            style="@style/DividerH"
+            android:layout_width="640dp"
+            android:layout_marginTop="19dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/tip_hub_num"/>
+
+        <TextView
+            android:id="@+id/tv_hub_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/accent"
+            android:textSize="70dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/tip_activate_hub"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_active_ok"
+        android:layout_width="779dp"
+        android:layout_height="463dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/bg_guide_active_ok"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_set_network"
+        style="@style/BtnAccent"
+        android:layout_marginTop="27dp"
+        android:text="@string/action_set_network"/>
+
+</LinearLayout>

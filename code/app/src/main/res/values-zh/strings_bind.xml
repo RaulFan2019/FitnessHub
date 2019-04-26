@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="bind_by_phone_title">微信扫一扫绑定手环</string>
+    <string name="bind_by_phone_back">点击返回键退出</string>
+
+    <string name="bind_by_close_back">点击返回键退出</string>
+
+    <string name="bind_by_close_scan_none">请打开手环靠近FIZZO HUB</string>
+    <string name="bind_by_close_scan_one">微信扫一扫绑定手环</string>
+
+</resources>

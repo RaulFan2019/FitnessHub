@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ReportBaseLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            style="@style/ReportTitle"
+            android:background="@drawable/bg_report_group_training_list_title"
+            android:text="@string/report_title_group_training"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/bg_shape_common_30_radius"
+            android:orientation="vertical">
+
+            <!-- 数据 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                    style="@style/ReportGroupTrainingListTitleTv"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="336dp"
+                    android:text="@string/report_group_training_time" />
+
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                    style="@style/ReportGroupTrainingListTitleTv"
+                    android:layout_width="164dp"
+                    android:text="@string/report_group_training_duration" />
+
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                    style="@style/ReportGroupTrainingListTitleTv"
+                    android:layout_width="164dp"
+                    android:text="@string/report_group_training_mover_count" />
+
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                    style="@style/ReportGroupTrainingListTitleTv"
+                    android:layout_width="162dp"
+                    android:text="@string/report_group_training_cal" />
+
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                    style="@style/ReportGroupTrainingListTitleTv"
+                    android:layout_width="156dp"
+                    android:text="@string/report_group_training_point" />
+
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                    style="@style/ReportGroupTrainingListTitleTv"
+                    android:text="@string/report_group_training_power"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_history"
+                style="@style/ListView"
+                android:layout_height="526dp"
+                android:layout_centerHorizontal="true"
+                android:listSelector="@drawable/selector_list_report_group_training"/>
+
+            <include layout="@layout/include_list_load_more"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 加載頁面 -->
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.LoadingView
+        android:id="@+id/v_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

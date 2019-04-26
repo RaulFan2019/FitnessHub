@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="987dp"
+    android:layout_height="80dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginLeft="12dp"
+    android:background="@drawable/bg_report_group_training_detail_title"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/report_group_training_detail_mover_count"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+        android:id="@+id/tv_mover_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="136dp"
+        android:textSize="20dp" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/report_group_training_detail_cal"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="242dp"
+        android:textSize="20dp" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+        android:id="@+id/tv_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="316dp"
+        android:textSize="20dp" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/report_group_training_detail_point"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="486dp"
+        android:textSize="20dp" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+        android:id="@+id/tv_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="592dp"
+        android:textSize="18dp" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/report_group_training_detail_power"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="743dp"
+        android:textSize="20dp" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+        android:id="@+id/tv_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="903dp"
+        android:textSize="20dp" />
+
+</RelativeLayout>

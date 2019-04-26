@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 基础布局 -->
+    <style name="ReportBaseLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/primary</item>
+    </style>
+
+    <style name="ReportTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">68dp</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">22dp</item>
+    </style>
+
+    <!-- summary report -->
+    <style name="ReportSummarySoftLl">
+        <item name="android:layout_width">281dp</item>
+        <item name="android:layout_height">117dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:background">@drawable/bg_report_summary_soft_focus</item>
+    </style>
+
+    <style name="ReportSummarySoftTopLl">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ReportSummarySoftIc">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+
+    <style name="ReportSummarySoftTopTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="ReportSummarySoftValueTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">44dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="ReportGroupTrainingListTitleTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="ReportSummaryListTitleTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="ReportGroupTrainingDetailListTitleTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="ReportGroupTrainingMoverDetailTotalTvKey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">19dp</item>
+    </style>
+
+    <style name="ReportGroupTrainingMoverDetailTotalTvValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:textSize">19dp</item>
+    </style>
+    <style name="ReportGroupTrainingMoverDetailTotalTvUnit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#7f7f7f</item>
+        <item name="android:textSize">12.4dp</item>
+    </style>
+
+    <!-- 报告列表中文字 -->
+    <style name="ReportItemTv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">22dp</item>
+    </style>
+
+</resources>

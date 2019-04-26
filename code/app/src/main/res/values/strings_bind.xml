@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="bind_by_phone_title">Scan qrcode by Wechat to bind the wristband</string>
+    <string name="bind_by_phone_back">click back button to quit</string>
+
+    <string name="bind_by_close_back">click back button to quit</string>
+
+    <string name="bind_by_close_scan_none">Please open the wristband, and have it closed to FIZZO HUB</string>
+    <string name="bind_by_close_scan_one">Scan qrcode by Wechat to bind the wristband</string>
+
+</resources>

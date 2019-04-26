@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    //Key
+    signingConfigs {
+        config {
+            storeFile file('D:/workspace/company porject/123Sports')
+            keyAlias '123sports'
+            keyPassword '123Sports'
+            storePassword '123Sports'
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "cn.fizzo.hub.fitness"
+        minSdkVersion 21
+        targetSdkVersion 22
+        versionCode 404
+        versionName "FizzoFitness 4.0.4"
+    }
+    buildTypes {
+        release {
+            zipAlignEnabled true //Zipalign优化
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            zipAlignEnabled true //Zipalign优化
+            minifyEnabled false
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    jcenter()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:leanback-v17:26.1.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:multidex:1.0.0'
+    //UI注解
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //事件处理
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //xUtils 框架
+    implementation 'org.xutils:xutils:3.4.0'
+    //焦点变化库
+    implementation project(':bridgeView')
+    //图表库
+    implementation project(':mpchartlib')
+    //gif 库
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.1'
+    // 腾讯播放器੕SDK aar
+    implementation(name: 'LiteAVSDK_UGC_3.2.1541', ext: 'aar')
+    //Fizzo Hub SDK
+    implementation(name:'FizzoHubSDK', ext:'aar')
+}

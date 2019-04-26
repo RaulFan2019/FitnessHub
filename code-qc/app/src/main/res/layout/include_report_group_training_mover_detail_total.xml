@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="74dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="6.2dp"
+    android:background="@drawable/bg_report_group_training_mover_detail_total"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name_duration"
+            style="@style/ReportGroupTrainingMoverDetailTotalTvKey"
+            android:text="@string/name_duration_group_training_detail" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            style="@style/ReportGroupTrainingMoverDetailTotalTvValue" />
+
+        <TextView
+            android:id="@+id/tv_unit_duration"
+            style="@style/ReportGroupTrainingMoverDetailTotalTvUnit"
+            android:layout_marginLeft="1dp"
+            android:text="@string/unit_report_duration" />
+
+        <TextView
+            android:id="@+id/tv_name_cal"
+            style="@style/ReportGroupTrainingMoverDetailTotalTvKey"
+            android:layout_marginLeft="54dp"
+            android:text="@string/name_cal_group_training_detail" />
+
+        <TextView
+            android:id="@+id/tv_calorie"
+            style="@style/ReportGroupTrainingMoverDetailTotalTvValue" />
+
+        <TextView
+            android:id="@+id/tv_unit_cal"
+            style="@style/ReportGroupTrainingMoverDetailTotalTvUnit"
+            android:layout_marginLeft="1dp"
+            android:text="@string/unit_cal" />
+
+        <TextView
+            android:id="@+id/tv_name_point"
+            style="@style/ReportGroupTrainingMoverDetailTotalTvKey"
+            android:layout_marginLeft="54dp"
+            android:text="@string/name_point_group_training_detail" />
+
+        <TextView
+            android:id="@+id/tv_point"
+            style="@style/ReportGroupTrainingMoverDetailTotalTvValue" />
+
+        <TextView
+            android:id="@+id/tv_name_avg_hr"
+            style="@style/ReportGroupTrainingMoverDetailTotalTvKey"
+            android:layout_marginLeft="54dp"
+            android:text="@string/name_avg_hr_group_training_detail" />
+
+        <TextView
+            android:id="@+id/tv_avg_hr"
+            style="@style/ReportGroupTrainingMoverDetailTotalTvValue" />
+
+        <TextView
+            android:id="@+id/tv_name_max_hr"
+            style="@style/ReportGroupTrainingMoverDetailTotalTvKey"
+            android:layout_marginLeft="53dp"
+            android:text="@string/name_max_hr_group_training_detail" />
+
+        <TextView
+            android:id="@+id/tv_max_hr"
+            style="@style/ReportGroupTrainingMoverDetailTotalTvValue" />
+
+        <TextView
+            android:id="@+id/tv_name_power"
+            style="@style/ReportGroupTrainingMoverDetailTotalTvKey"
+            android:layout_marginLeft="54dp"
+            android:text="@string/name_power_group_training_detail" />
+
+        <TextView
+            android:id="@+id/tv_power"
+            style="@style/ReportGroupTrainingMoverDetailTotalTvValue" />
+
+        <TextView
+            android:id="@+id/tv_unit_power"
+            style="@style/ReportGroupTrainingMoverDetailTotalTvUnit"
+            android:layout_marginLeft="1dp"
+            android:text="@string/unit_cal" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="258dp"
+    android:layout_height="151dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="11dp"
+    android:background="@drawable/dark_bg_item_sport_group">
+
+    <!-- 头像 -->
+    <FrameLayout
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="18dp">
+
+        <cn.fizzo.hub.fitness.ui.widget.circular.CircularImage
+            android:id="@+id/iv_avatar"
+            style="@style/SportAvatar" />
+
+        <View
+            android:id="@+id/v_mask"
+            style="@style/SportAvatarMask"/>
+
+        <TextView
+            android:id="@+id/tv_ant"
+            style="@style/SportAnt"
+            android:layout_height="20dp"
+            android:textSize="12dp"
+            android:textColor="@color/dark_tv_secondly"/>
+    </FrameLayout>
+
+    <!-- 名字和卡路里 -->
+    <LinearLayout
+        android:layout_width="62dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginLeft="4dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/dark_tv_secondly"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/dark_ic_kcal"/>
+
+            <TextView
+                android:id="@+id/tv_kcal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="89dp"
+        android:layout_height="89dp">
+        <cn.fizzo.hub.fitness.ui.widget.progress.CustomCircleProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:direction="top"
+            app:max_progress="100"
+            app:inside_color="@color/transparent"
+            app:outside_color="@android:color/white"
+            app:outside_radius="38dp"
+            app:progress_width="3dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dark_bg_sport_group_progress"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_hr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"/>
+            <TextView
+                android:id="@+id/tv_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:text="%"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

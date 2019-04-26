@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ReportBaseLayout"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/bg_report_group_training_mover_detail_title"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+
+            <cn.fizzo.hub.fitness.ui.widget.circular.CircularImage
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@android:color/white" />
+
+            <cn.fizzo.hub.fitness.ui.widget.circular.CircularImage
+                android:id="@+id/iv_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp" />
+        </FrameLayout>
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_shape_common_30_radius"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 统计数据 -->
+            <include layout="@layout/include_report_group_training_mover_detail_total" />
+
+            <!-- 图表文字 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="19dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/report_group_training_mover_detail_chart_power"
+                    android:textColor="@android:color/white"
+                    android:textSize="14.9dp" />
+
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/report_group_training_mover_detail_chart_hr"
+                    android:textColor="@android:color/white"
+                    android:textSize="14.9dp" />
+            </LinearLayout>
+
+            <!-- 图表 -->
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" />
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:text="@string/report_group_training_mover_detail_chart_duration"
+                android:textColor="@android:color/white"
+                android:textSize="14.9dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_report_group_training_mover_detail_change"/>
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tv_secondly"
+                android:layout_marginLeft="4dp"
+                android:textSize="20dp"
+                android:text="@string/report_group_training_mover_detail_change_tip"/>
+        </LinearLayout>
+
+        <!-- 加載頁面 -->
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.LoadingView
+            android:id="@+id/v_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

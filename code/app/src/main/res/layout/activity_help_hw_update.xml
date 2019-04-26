@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_download"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:background="@color/primary"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="303dp"
+            android:layout_height="303dp"
+            android:layout_gravity="center_horizontal|center_vertical">
+
+            <View
+                android:id="@+id/iv_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_help_update_progress" />
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="0%"
+                android:textColor="@android:color/white"
+                android:textSize="80dp" />
+        </FrameLayout>
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="升级包下载中..."
+            android:textColor="@color/tv_secondly"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,1 @@
+include ':app', ':FizzoHubSDK', ':bridgeView', ':mpchartlib'

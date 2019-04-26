@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="ThemeCommon" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ThemeAppStartLoad" parent="ThemeCommon">
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">#333333</item>
+    </style>
+
+
+    <!-- Divider -->
+    <style name="DividerH">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2px</item>
+        <item name="android:background">@color/bg_divider</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="DividerV">
+        <item name="android:layout_width">2px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/bg_divider</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="DividerTransparent">
+        <item name="android:background">@drawable/bg_divider_transparent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">640dp</item>
+    </style>
+
+    <style name="DividerTransparentV">
+        <item name="android:background">@drawable/bg_divider_transparent_v</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">640dp</item>
+    </style>
+
+    <!-- Dialog -->
+    <style name="DialogWindowTitle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="DialogWindowTitle.DeviceDefault">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@style/DialogWindowTitle</item>
+    </style>
+
+    <style name="DialogTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle.DeviceDefault</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- Button -->
+    <style name="BtnAccent">
+        <item name="android:layout_width">275dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:background">@drawable/selector_btn_accent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+    <style name="BtnDialog">
+        <item name="android:layout_width">275dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:background">@drawable/selector_btn_dlg</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!-- listView -->
+    <style name="ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:focusable">true</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="RecyclerView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
+        <item name="android:divider">@null</item>
+    </style>
+</resources>

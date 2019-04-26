@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_select_duration"
+        style="@style/ReportSummarySelectLl">
+
+        <LinearLayout style="@style/ReportSummarySelectTopLl">
+
+            <View
+                style="@style/ReportSummarySelectIc"
+                android:background="@drawable/ic_summary_duraion" />
+
+            <TextView
+                android:id="@+id/tv_summary_name_duration"
+                style="@style/ReportSummarySelectTopTv"
+                android:text="@string/name_report_summary_duration" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_summary_value_duration"
+            style="@style/ReportSummarySelectValueTv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_select_cal"
+        style="@style/ReportSummarySelectLl">
+
+        <LinearLayout style="@style/ReportSummarySelectTopLl">
+
+            <View
+                style="@style/ReportSummarySelectIc"
+                android:background="@drawable/ic_summary_cal" />
+
+            <TextView
+                android:id="@+id/tv_summary_name_cal"
+                style="@style/ReportSummarySelectTopTv"
+                android:text="@string/name_report_summary_cal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_summary_value_cal"
+            style="@style/ReportSummarySelectValueTv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_select_point"
+        style="@style/ReportSummarySelectLl">
+
+        <LinearLayout style="@style/ReportSummarySelectTopLl">
+
+            <View
+                style="@style/ReportSummarySelectIc"
+                android:background="@drawable/ic_summary_point" />
+
+            <TextView
+                android:id="@+id/tv_summary_name_point"
+                style="@style/ReportSummarySelectTopTv"
+                android:text="@string/name_report_summary_point" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_summary_value_point"
+            style="@style/ReportSummarySelectValueTv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_select_effort"
+        style="@style/ReportSummarySelectLl">
+
+        <LinearLayout style="@style/ReportSummarySelectTopLl">
+
+            <View
+                style="@style/ReportSummarySelectIc"
+                android:background="@drawable/ic_summary_power" />
+
+            <TextView
+                android:id="@+id/tv_summary_name_effort"
+                style="@style/ReportSummarySelectTopTv"
+                android:text="@string/name_report_summary_effort" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_summary_value_effort"
+            style="@style/ReportSummarySelectValueTv" />
+    </LinearLayout>
+
+</LinearLayout>

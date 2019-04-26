@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="main_navi_sport">锻炼</string>
+    <string name="main_navi_report">报告</string>
+    <string name="main_navi_training">课程</string>    
+    <string name="main_navi_bind">绑定</string>
+    <string name="main_navi_setting">设置</string>
+
+</resources>

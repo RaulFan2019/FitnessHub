@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="MainNavigationRBtn">
+        <item name="android:layout_width">105dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/radio_btn_main_navigation</item>
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">@drawable/radio_btn_main_navigation</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="MainNavigationTv">
+        <item name="android:layout_width">105dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textSize">19dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

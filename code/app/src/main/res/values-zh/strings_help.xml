@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="help_about_us_title">关于我们</string>
+    <string name="help_about_us_content">FIZZO隶属于第五区运动科技（上海）有限公司，专注于运动健康智能产品。旗下包括高准确度心率监测穿戴设备、心率监控系统、智能健身云平台。同时，也为学校、专业体训队、智能健身房、健身器械厂商提供心率等生理数据监测分析的一体化解决方案。</string>
+    <string name="help_about_us_tip_1">更多服务内容</string>
+    <string name="help_about_us_tip_2">关注服务微信服务号</string>
+
+    <string name="help">帮助</string>
+    
+    <string name="help_soft_version">软件版本</string>
+    <string name="help_hw_version">硬件版本</string>
+    <string name="help_debug">设备调试</string>
+    <string name="help_reset">重置数据</string>
+    <string name="help_about_us">关于我们</string>
+
+    <string name="help_version_info">软件信息</string>
+    <string name="help_downloading_soft">升级包下载中..</string>
+    <string name="help_latest_version_now">当前版本已是最新版本</string>
+
+
+</resources>

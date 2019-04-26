@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:minHeight="75dp"
+    android:orientation="vertical">
+
+    <!-- 数据 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/ReportItemTv"
+            android:layout_marginLeft="70dp"
+            android:layout_width="336dp"/>
+
+        <TextView
+            android:id="@+id/tv_duration"
+            style="@style/ReportItemTv"
+            android:layout_width="164dp"/>
+
+        <TextView
+            android:id="@+id/tv_mover_count"
+            style="@style/ReportItemTv"
+            android:layout_width="164dp"/>
+
+        <TextView
+            android:id="@+id/tv_cal"
+            style="@style/ReportItemTv"
+            android:layout_width="162dp"/>
+
+        <TextView
+            android:id="@+id/tv_point"
+            style="@style/ReportItemTv"
+            android:layout_width="156dp"/>
+
+        <TextView
+            android:id="@+id/tv_power"
+            style="@style/ReportItemTv"
+            android:layout_width="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/DividerH"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:alpha="0.5"/>
+
+</RelativeLayout>

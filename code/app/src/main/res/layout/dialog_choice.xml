@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="633dp"
+    android:layout_height="212dp"
+    android:background="@color/primary"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical">
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="27dp"
+        android:textColor="@android:color/white"
+        android:textSize="24dp" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        android:id="@+id/tv_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tv_secondly"
+        android:textSize="18dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:orientation="horizontal">
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalButton
+            android:id="@+id/btn_confirm"
+            style="@style/BtnDialog"/>
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalButton
+            android:id="@+id/btn_cancel"
+            style="@style/BtnDialog"
+            android:layout_marginLeft="46dp"
+            android:text="取消" />
+
+    </LinearLayout>
+
+</LinearLayout>

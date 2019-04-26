@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\workspace\company porject\FizoTv\SourceCode\2.0 - qc\lib\src\main\assets"/><source path="E:\workspace\company porject\FizoTv\SourceCode\2.0 - qc\lib\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="E:\workspace\company porject\FizoTv\SourceCode\2.0 - qc\lib\src\release\assets"/></dataSet></merger>

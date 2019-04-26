@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="setting_create">Create</string>
+
+    <string name="setting_hub_group_title">Hub Group Setting</string>
+    <string name="setting_hub_group_title_tip">Same group,Exercise data</string>
+    <string name="setting_hub_group_join">Join</string>
+    <string name="setting_hub_group_edit_name">Edit Group Name</string>
+    <string name="setting_hub_group_delete">Delete</string>
+    <string name="setting_hiit_edit_name">Edit Name</string>
+    <string name="setting_hiit_delete">Delete</string>
+
+    <string name="setting_hiit_title">Interval Training</string>
+
+    <string name="setting_hiit_title_create">Create Interval Training</string>
+
+    <string name="setting_hiit_create_name">Name</string>
+    <string name="setting_hiit_create_moving_time">Training Time</string>
+    <string name="setting_hiit_create_rest_time">Rest Time</string>
+
+    <string name="setting_hiit_create_min">Min</string>
+    <string name="setting_hiit_create_sec">Sec</string>
+
+    <string name="setting_hiit_create_btn">finish</string>
+
+    <string name="setting_hiit_create_toast_input_name">Please Input Name!</string>
+    <string name="setting_hiit_create_toast_input_moving_time">Please Input Moving Time!</string>
+    <string name="setting_hiit_create_toast_input_rest_time">Please Input Rest Time!</string>
+    <string name="setting_hiit_create_toast_create_ok">Create Success!</string>
+
+</resources>

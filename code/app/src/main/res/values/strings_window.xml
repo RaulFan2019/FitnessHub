@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="window_net_error">Connection failure, please check network status！</string>
+
+
+</resources>

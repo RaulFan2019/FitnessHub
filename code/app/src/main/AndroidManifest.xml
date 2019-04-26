@@ -1,0 +1,141 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.fizzo.hub.fitness">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+    <!-- 设备运行限制 -->
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <!-- 不需要触屏输入 -->
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:name=".LocalApp"
+        android:allowBackup="true"
+        android:banner="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/ThemeCommon">
+
+        <!-- main -->
+        <activity
+            android:name=".ui.activity.main.WelcomeActivity"
+            android:theme="@style/ThemeAppStartLoad">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".ui.activity.main.MainMenuActivity" />
+        <activity android:name=".ui.activity.main.MainMenuQCActivity" />
+        <activity android:name=".ui.activity.main.DarkMainMenuActivity"/>
+
+
+        <!-- Guide -->
+        <activity android:name=".ui.activity.guide.GuideActivateHubActivity" />
+        <activity android:name=".ui.activity.guide.GuideInstructionsActivity" />
+        <activity android:name=".ui.activity.guide.GuideActivateHubQCActivity" />
+        <activity android:name=".ui.activity.guide.GuideInstructionsQCActivity" />
+
+        <!-- Bind -->
+        <activity android:name=".ui.activity.bind.BindByPhoneActivity" />
+        <activity android:name=".ui.activity.bind.BindByCloseActivity" />
+
+        <!-- help  -->
+        <activity android:name=".ui.activity.help.HelpDebugActivity" />
+        <activity android:name=".ui.activity.help.HelpAboutUsActivity" />
+        <activity android:name=".ui.activity.help.HelpActivity" />
+        <activity android:name=".ui.activity.help.HelpSoftUpdateActivity" />
+        <activity android:name=".ui.activity.help.HelpHwUpdateActivity"/>
+
+        <!-- report -->
+        <activity android:name=".ui.activity.report.ReportSummaryDayActivity" />
+        <activity android:name=".ui.activity.report.ReportSummaryWeekActivity" />
+        <activity android:name=".ui.activity.report.ReportSummaryMonthActivity" />
+        <activity android:name=".ui.activity.report.ReportGroupTrainingListActivity" />
+        <activity android:name=".ui.activity.report.ReportGroupTrainingDetailActivity" />
+        <activity android:name=".ui.activity.report.ReportGroupTrainingMoverDetailActivity" />
+
+        <!-- setting -->
+        <activity android:name=".ui.activity.setting.SettingHubGroupActivity" />
+        <activity android:name=".ui.activity.setting.SettingHIITActivity"/>
+        <activity android:name=".ui.activity.setting.SettingHIITCreateActivity"/>
+
+        <!-- sport -->
+        <activity android:name=".ui.activity.sport.free.SportFreeActivity" />
+        <activity android:name=".ui.activity.sport.free.DarkSportFreeActivity"/>
+        <activity android:name=".ui.activity.sport.group.DarkSportGroupActivity"/>
+
+
+        <activity android:name=".ui.activity.sport.group.SportGroupTrainingActivity" />
+        <activity android:name=".ui.activity.sport.free.SportFreeQCActivity" />
+        <activity android:name=".ui.activity.sport.group.SportGroupTrainingBDActivity"/>
+        <activity android:name=".ui.activity.sport.hiit.SportHIITActivity"/>
+        <activity android:name=".ui.activity.sport.hiit.SportHIITSelectActivity"/>
+
+        <!-- circuit -->
+        <activity android:name=".ui.activity.sport.circuit.DarkSportCircuitActivity"/>
+
+        <!--  pk -->
+        <activity android:name=".ui.activity.sport.pk.SportPkActivity"/>
+        <activity android:name=".ui.activity.sport.pk.SportPkReportActivity"/>
+
+        <!-- assess -->
+        <activity android:name=".ui.activity.sport.assess.AssessSelectActivity" />
+        <activity android:name=".ui.activity.sport.assess.AssessSignUpActivity" />
+        <activity android:name=".ui.activity.sport.assess.AssessMethod1Activity" />
+        <activity android:name=".ui.activity.sport.assess.AssessMethodEndActivity" />
+
+        <!-- course -->
+        <activity android:name=".ui.activity.sport.course.CourseSelectActivity" />
+        <activity android:name=".ui.activity.sport.course.CourseDetailActivity" />
+        <activity android:name=".ui.activity.sport.course.CoursePlayActivity" />
+
+        <!-- 同步设备信息服务 -->
+        <service android:name=".service.SyncConsoleInfoService" />
+        <!-- 实时上传心率数据 -->
+        <service android:name=".service.RealTimeUploadAntInfoService" />
+        <!-- 上传缓存信息服务 -->
+        <service android:name=".service.CacheInfoUploadService" />
+        <!-- 获取HUB组信息 -->
+        <service android:name=".service.SyncGroupAntDataService" />
+        <!-- 学员统计服务 -->
+        <service android:name=".service.MoverDaySummaryService" />
+        <!-- 团课锻炼服务 -->
+        <service android:name=".service.SportGroupTrainingService" />
+        <!-- 发送崩溃日志的服务 -->
+        <service android:name=".service.SendCrashLogService" />
+        <!-- 同步循环训练服务 -->
+        <service android:name=".service.SyncCircuitService" />
+
+        <service android:name=".service.VoiceService"/>
+
+        <!-- 监听串口数据服务 -->
+        <service android:name="cn.fizzo.hub.sdk.service.SerialPortService" />
+        <service android:name="cn.fizzo.hub.sdk.service.SerialSendService"/>
+
+        <receiver android:name="cn.fizzo.hub.sdk.service.NetWorkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

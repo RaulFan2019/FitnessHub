@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalButton
+        android:id="@+id/btn_control"
+        style="@style/BtnAccent"
+        android:layout_width="221dp"
+        android:layout_height="75dp" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+        android:id="@+id/tv_prise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tv_secondly"
+        android:layout_marginLeft="16dp"
+        android:textSize="15dp" />
+
+</LinearLayout>

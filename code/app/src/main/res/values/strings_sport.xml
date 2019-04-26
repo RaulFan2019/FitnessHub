@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sport_scan_to_bind">Scan qrcode to bind</string>
+    <string name="sport_change_hr_show_mode">Left/right button to switch show mode</string>
+
+
+    <string name="sport_free_weixin_bind">bind fizzo,then start sport</string>
+    <string name="sport_free_right_bar_scan">Scan qrcode with Wechat to bind</string>
+    <string name="sport_free_today_data">today data</string>
+
+    <string name="sport_unbind">Unbinded</string>
+    <string name="sport_group_training_know">Know</string>
+
+    <string name="sport_group_current_count">Exercisers count</string>
+    <string name="sport_group_training_scan">Scan qrcode by Wechat to bind</string>
+    <string name="sport_group_training_ing">Group Training...</string>
+    <string name="sport_group_training_time">Group Training Time</string>
+    <string name="sport_group_training_back_to_finish">click back button to finish</string>
+    <string name="sport_group_training_total">group total</string>
+
+
+    <string name="sport_group_training_dlg_finish_title">Finish this group training?</string>
+    <string name="sport_group_training_dlg_finish_btn">Finish</string>
+
+    <string name="sport_pk_dlg_finish_title">Finish this PK?</string>
+
+    <string name="sport_hiit_list">Interval Training List</string>
+
+    <string name="sport_pk_sort">Sort</string>
+    <string name="sport_pk_name">Name</string>
+    <string name="sport_pk_cal">Calorie</string>
+    <string name="sport_pk_power">Intensity</string>
+</resources>

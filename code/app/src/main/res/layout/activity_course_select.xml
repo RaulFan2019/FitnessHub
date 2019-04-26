@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#312D36">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- 体能测试类型 -->
+        <LinearLayout
+            android:layout_width="199dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                android:layout_width="match_parent"
+                android:layout_height="99dp"
+                android:gravity="center"
+                android:text="@string/course"
+                android:textColor="@android:color/white"
+                android:textSize="35dp" />
+
+            <ListView
+                android:id="@+id/list_category"
+                android:layout_width="171dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:divider="@null"
+                android:focusable="true"
+                android:scrollbars="none"/>
+        </LinearLayout>
+
+        <View
+            style="@style/DividerTransparentV"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="27dp"
+            android:layout_marginTop="27dp"/>
+
+        <!-- 测试方法 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp">
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                android:id="@+id/tv_category_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tv_secondly"
+                android:layout_marginTop="24dp"
+                android:textSize="20dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:focusable="true">
+                <com.open.androidtvwidget.leanback.recycle.RecyclerViewTV
+                    android:id="@+id/rv_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="false" />
+                <com.open.androidtvwidget.view.MainUpView
+                    android:id="@+id/mainUpView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--&lt;!&ndash; 加載頁面 &ndash;&gt;-->
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.LoadingView
+        android:id="@+id/v_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

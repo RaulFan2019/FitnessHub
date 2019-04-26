@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <View
+        android:layout_width="1219dp"
+        android:layout_height="528dp"
+        android:layout_marginTop="57dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_main_welcome_shadow"/>
+
+    <View
+        android:id="@+id/v_logo"
+        android:layout_width="185dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="311dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_main_welcome_logo" />
+
+
+</FrameLayout>

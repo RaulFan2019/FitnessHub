@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.SmoothHorizontalScrollView
+        android:id="@+id/h_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.FrameMainLayoutQC
+            android:id="@+id/fl_base_qc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="80dp">
+
+
+        </cn.fizzo.hub.fitness.ui.widget.fizzo.FrameMainLayoutQC>
+    </cn.fizzo.hub.fitness.ui.widget.fizzo.SmoothHorizontalScrollView>
+</RelativeLayout>

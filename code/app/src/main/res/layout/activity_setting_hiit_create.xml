@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/SettingBaseLayout">
+        <!-- title -->
+        <LinearLayout
+            style="@style/SettingTitleLine">
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                style="@style/SettingTitleMain"
+                android:text="@string/setting_hiit_title_create" />
+        </LinearLayout>
+
+        <!-- 名称 -->
+        <LinearLayout
+            style="@style/SettingHIITCreateLine"
+            android:layout_marginTop="28dp">
+
+            <TextView
+                style="@style/SettingHIITCreateName"
+                android:layout_width="292dp"
+                android:text="@string/setting_hiit_create_name" />
+
+            <LinearLayout
+                android:id="@+id/ll_et_name"
+                style="@style/SettingHIITCreateEditLayout"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/SettingHIITCreateEditEt" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 运动时长 -->
+        <LinearLayout
+            style="@style/SettingHIITCreateLine"
+            android:layout_marginTop="54dp">
+
+            <TextView
+                style="@style/SettingHIITCreateName"
+                android:layout_width="292dp"
+                android:text="@string/setting_hiit_create_moving_time" />
+
+            <LinearLayout
+                android:id="@+id/ll_et_moving_time_min"
+                style="@style/SettingHIITCreateEditLayout"
+                android:layout_width="358dp">
+
+                <EditText
+                    android:id="@+id/et_moving_time_min"
+                    style="@style/SettingHIITCreateEditEt"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/SettingHIITCreateName"
+                android:layout_width="102dp"
+                android:gravity="center_horizontal"
+                android:text="@string/setting_hiit_create_min" />
+
+            <LinearLayout
+                android:id="@+id/ll_et_moving_time_sec"
+                style="@style/SettingHIITCreateEditLayout"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_moving_time_sec"
+                    style="@style/SettingHIITCreateEditEt"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/SettingHIITCreateName"
+                android:layout_width="102dp"
+                android:gravity="center_horizontal"
+                android:text="@string/setting_hiit_create_sec" />
+        </LinearLayout>
+
+        <!-- 休息时长 -->
+        <LinearLayout
+            style="@style/SettingHIITCreateLine"
+            android:layout_marginTop="54dp">
+
+            <TextView
+                style="@style/SettingHIITCreateName"
+                android:layout_width="292dp"
+                android:text="@string/setting_hiit_create_rest_time" />
+
+            <LinearLayout
+                android:id="@+id/ll_et_rest_time"
+                style="@style/SettingHIITCreateEditLayout"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_rest_time"
+                    style="@style/SettingHIITCreateEditEt"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:maxLength="3" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/SettingHIITCreateName"
+                android:layout_width="102dp"
+                android:gravity="center_horizontal"
+                android:text="@string/setting_hiit_create_sec" />
+        </LinearLayout>
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalButton
+            android:id="@+id/btn_finish"
+            style="@style/BtnAccent"
+            android:layout_marginTop="64dp"
+            android:text="@string/setting_hiit_create_btn" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+</FrameLayout>

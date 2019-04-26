@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="main_menu_tab_sport">Workout</string>
+    <string name="main_menu_tab_report">Report</string>
+    <string name="main_menu_tab_bind">Binding</string>
+    <string name="main_menu_tab_setting">Setting</string>
+    <string name="main_menu_tab_help">help</string>
+
+
+    <string name="main_menu_sport_name_free">Free workout</string>
+    <string name="main_menu_sport_name_group">Group training</string>
+    <string name="main_menu_sport_name_course">Course training</string>
+    <string name="main_menu_sport_name_test">Fitness test</string>
+    <string name="main_menu_sport_name_hiit">interval training</string>
+
+    <string name="main_menu_sport_tip1_free">Free workout</string>
+    <string name="main_menu_sport_tip1_group">Begin Group training</string>
+    <string name="main_menu_sport_tip1_course">Set an effort point target</string>
+    <string name="main_menu_sport_tip1_test">Scientific testing</string>
+    <string name="main_menu_sport_tip1_hiit">Begin interval training</string>
+
+    <string name="main_menu_sport_tip2_free">Exerciser\'s real-time heart rate on screen</string>
+    <string name="main_menu_sport_tip2_group">Exerciser\'s workout report ready once workout accomplished</string>
+    <string name="main_menu_sport_tip2_course">Exerciser\'s Effort point real-time ranking during workout</string>
+    <string name="main_menu_sport_tip2_test">Exerciser\'s testing real-time during workout</string>
+    <string name="main_menu_sport_tip2_hiit">Exerciser\'s workout report ready once workout accomplished</string>
+
+    <string name="main_menu_report_name_group">Group report</string>
+    <string name="main_menu_report_name_day">Daily report</string>
+    <string name="main_menu_report_name_week">Weekly report</string>
+    <string name="main_menu_report_name_month">Monthly report</string>
+
+    <string name="main_menu_report_tip1_group">Group training report</string>
+    <string name="main_menu_report_tip1_day">Exercisers\' Daily workout report</string>
+    <string name="main_menu_report_tip1_week">Exercisers\' Weekly week workout report</string>
+    <string name="main_menu_report_tip1_month">Exercisers\' Monthly workout report</string>
+
+    <string name="main_menu_report_tip2_group">Coach can control the overall workout intensity and performance of the exercisers</string>
+    <string name="main_menu_report_tip2_day">Check exercisers\' effort point ranking and calorie ranking</string>
+    <string name="main_menu_report_tip2_week">Coach can check  exercisers\' weekly ranking</string>
+    <string name="main_menu_report_tip2_month">Coach can check  exercisers\' weekly ranking</string>
+
+    <string name="main_menu_bind_title_close">Get close to hub</string>
+    <string name="main_menu_bind_title_input">Bin to bind</string>
+
+    <string name="main_menu_bind_tip_close">Compatiable with ANT+ heart rate Monitor</string>
+    <string name="main_menu_bind_tip_input">Only work with FIZZO wristband</string>
+    <string name="main_menu_bind_tip_input_wuxipaobao">编号在心率手环侧面位置</string>
+
+    <string name="main_menu_setting_title_wifi">Wifi Setting</string>
+    <string name="main_menu_setting_title_hub_group">HUB Group</string>
+    <string name="main_menu_setting_title_help">HELP</string>
+    <string name="main_menu_setting_title_hiit">nterval Training Setting</string>
+
+
+    <string name="main_menu_qc_name_sport">SPORT</string>
+    <string name="main_menu_qc_name_wifi">Wifi Setting</string>
+    <string name="main_menu_qc_name_update">Upgrade</string>
+    <string name="main_menu_qc_name_about_us">About us</string>
+</resources>

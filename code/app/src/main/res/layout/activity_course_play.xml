@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:layout_width="1023dp"
+                android:layout_height="576dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp">
+
+                <VideoView
+                    android:id="@+id/video_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_course_play_video"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="373dp"
+                    android:background="@drawable/bg_course_play_info_top"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="164dp"
+                        android:layout_height="164dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/white">
+
+                        <ImageView
+                            android:id="@+id/iv_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:background="@android:color/white" />
+                    </LinearLayout>
+
+                    <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+                        android:id="@+id/tv_curr_mover_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="42dp"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="38dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_course_play_info_bottom"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="34dp" />
+
+                    <!-- 目标心率区间 -->
+                    <LinearLayout
+                        android:id="@+id/ll_zone"
+                        android:layout_width="173dp"
+                        android:layout_height="80dp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="14dp"
+                        android:orientation="vertical">
+
+                        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/course_play_zone"
+                            android:textColor="@android:color/white"
+                            android:textSize="10dp"
+                            android:layout_marginTop="14dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:paddingLeft="10dp"
+                            android:orientation="horizontal">
+
+                            <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+                                android:id="@+id/tv_zone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/white"
+                                android:textSize="34dp" />
+
+                            <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="%"
+                                android:textColor="@android:color/white"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 学员区域      -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/bg_course_scan_no_device">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_mover"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:divider="@null" />
+
+            <LinearLayout
+                android:id="@+id/ll_no_device"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal|center_vertical">
+
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="24dp"
+                    android:text="@string/course_scan_no_device_title"/>
+
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tv_secondly"
+                    android:layout_marginTop="6dp"
+                    android:textSize="15dp"
+                    android:text="@string/course_scan_no_device_info"/>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

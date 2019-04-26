@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_soft_duration"
+        style="@style/ReportSummarySoftLl">
+
+        <LinearLayout style="@style/ReportSummarySoftTopLl">
+
+            <View
+                style="@style/ReportSummarySoftIc"
+                android:background="@drawable/ic_report_summary_duraion" />
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                style="@style/ReportSummarySoftTopTv"
+                android:text="@string/report_summary_soft_duration" />
+        </LinearLayout>
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+            android:id="@+id/tv_summary_value_duration"
+            style="@style/ReportSummarySoftValueTv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_soft_cal"
+        style="@style/ReportSummarySoftLl">
+
+        <LinearLayout style="@style/ReportSummarySoftTopLl">
+
+            <View
+                style="@style/ReportSummarySoftIc"
+                android:background="@drawable/ic_report_summary_cal" />
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                style="@style/ReportSummarySoftTopTv"
+                android:text="@string/report_summary_soft_cal" />
+        </LinearLayout>
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+            android:id="@+id/tv_summary_value_cal"
+            style="@style/ReportSummarySoftValueTv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_soft_point"
+        style="@style/ReportSummarySoftLl">
+
+        <LinearLayout style="@style/ReportSummarySoftTopLl">
+
+            <View
+                style="@style/ReportSummarySoftIc"
+                android:background="@drawable/ic_report_summary_point" />
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                style="@style/ReportSummarySoftTopTv"
+                android:text="@string/report_summary_soft_point" />
+        </LinearLayout>
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+            android:id="@+id/tv_summary_value_point"
+            style="@style/ReportSummarySoftValueTv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_soft_effort"
+        style="@style/ReportSummarySoftLl">
+
+        <LinearLayout style="@style/ReportSummarySoftTopLl">
+
+            <View
+                style="@style/ReportSummarySoftIc"
+                android:background="@drawable/ic_report_summary_power" />
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                style="@style/ReportSummarySoftTopTv"
+                android:text="@string/report_summary_soft_effort" />
+        </LinearLayout>
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+            android:id="@+id/tv_summary_value_effort"
+            style="@style/ReportSummarySoftValueTv" />
+    </LinearLayout>
+
+</LinearLayout>

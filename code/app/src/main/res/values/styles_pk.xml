@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PkReadyTeamLayout">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="PkReadyTeamTitleLayout">
+        <item name="android:layout_width">452dp</item>
+        <item name="android:layout_height">132dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">93dp</item>
+    </style>
+
+    <style name="PkReadyTeamTitleCountTx">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">45dp</item>
+        <item name="android:layout_marginTop">62dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="PkIngTeamCalTx">
+        <item name="android:layout_width">458dp</item>
+        <item name="android:layout_height">132dp</item>
+        <item name="android:textSize">60dp</item>
+        <item name="android:paddingTop">60dp</item>
+    </style>
+
+    <style name="PkReportTeamLayout">
+        <item name="android:layout_width">592dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="PkReportTeamTotalLayout">
+        <item name="android:layout_width">538dp</item>
+        <item name="android:layout_height">132dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="PkReportTeamCal">
+        <item name="android:layout_width">154dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">62dp</item>
+        <item name="android:textSize">45dp</item>
+    </style>
+    <style name="PkReportTeamCount">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">62dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">45dp</item>
+    </style>
+    <style name="PkReportListTitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">22dp</item>
+    </style>
+    <style name="PkReportItemTv">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">22dp</item>
+    </style>
+</resources>

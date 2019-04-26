@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="49dp"
+        android:text="@string/bind_by_close_scan_one"/>
+
+    <View
+        style="@style/DividerTransparent"
+        android:layout_width="640dp"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="278dp"
+            android:layout_height="278dp"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/iv_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="139dp"
+            android:gravity="center_horizontal">
+
+            <View
+                android:layout_width="133dp"
+                android:layout_height="177dp"
+                android:background="@drawable/ic_bind_watch"/>
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                android:id="@+id/tv_scan_ant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="60dp"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

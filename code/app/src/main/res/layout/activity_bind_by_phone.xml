@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="779dp"
+        android:layout_height="463dp"
+        android:layout_marginTop="129dp"
+        android:background="@drawable/bg_shape_common_30_radius"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="49dp"
+            android:text="@string/bind_by_phone_title"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+
+        <View
+            style="@style/DividerTransparent"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="278dp"
+            android:layout_height="278dp"
+            android:layout_marginTop="44dp"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/iv_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="65dp"
+        android:layout_gravity="right|bottom"
+        android:gravity="center_horizontal|center_vertical">
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_back"/>
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_secondly"
+            android:layout_marginLeft="4dp"
+            android:textSize="20dp"
+            android:text="@string/bind_by_phone_back"/>
+
+    </LinearLayout>
+</LinearLayout>

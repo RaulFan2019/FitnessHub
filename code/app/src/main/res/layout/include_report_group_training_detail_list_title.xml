@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="63dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        style="@style/ReportGroupTrainingDetailListTitleTv"
+        android:layout_marginLeft="290dp"
+        android:layout_width="152dp"
+        android:text="@string/report_group_training_cal" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        style="@style/ReportGroupTrainingDetailListTitleTv"
+        android:layout_width="124dp"
+        android:text="@string/report_group_training_point"/>
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        style="@style/ReportGroupTrainingDetailListTitleTv"
+        android:layout_width="150dp"
+        android:text="@string/report_group_training_avg_hr" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        style="@style/ReportGroupTrainingDetailListTitleTv"
+        android:layout_width="150dp"
+        android:text="@string/report_group_training_max_hr" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        style="@style/ReportGroupTrainingDetailListTitleTv"
+        android:text="@string/report_group_training_power" />
+
+</LinearLayout>

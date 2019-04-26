@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <!-- 运动页面 -->
+    <LinearLayout
+        android:id="@+id/ll_sport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingBottom="26dp"
+            android:paddingLeft="78dp"
+            android:paddingRight="78dp"
+            android:paddingTop="26dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_mover"
+                style="@style/RecyclerView"/>
+        </LinearLayout>
+
+        <include layout="@layout/include_sport_free_bar" />
+    </LinearLayout>
+
+    <!-- 时钟页面 -->
+    <LinearLayout
+        android:id="@+id/rl_clock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_sport_free_clock"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <!-- 二维码 -->
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="29dp"
+            android:background="@color/accent">
+
+            <ImageView
+                android:id="@+id/iv_big_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@android:color/white" />
+        </LinearLayout>
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/sport_free_weixin_bind"
+            android:textColor="@color/tv_secondly"
+            android:textSize="18dp" />
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+            android:id="@+id/tv_clock"
+            android:layout_width="match_parent"
+            android:layout_height="174dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/accent"
+            android:textSize="110dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="70dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <View
+                    android:id="@+id/v_app_logo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_logo_small"/>
+
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tv_secondly"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/app_name"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_vendor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp">
+                <View
+                    android:id="@+id/v_vendor_logo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                    android:id="@+id/tv_vendor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tv_secondly"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

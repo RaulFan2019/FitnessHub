@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="chart_axis_tx">#ffffff</color>
+    <color name="chart_line">#48454b</color>
+    <color name="chart_value_tx">#ffffff</color>
+
+    <color name="primary">#171619</color>
+    <color name="accent">#fd0002</color>
+
+    <color name="bg_divider">#7F7F7F</color>
+
+    <color name="tv_secondly">#88817F</color>
+
+
+</resources>

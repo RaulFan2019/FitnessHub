@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/course_detail_intensity"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+    <View
+        android:id="@+id/v_intensity_1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/ic_course_intensity" />
+
+    <View
+        android:id="@+id/v_intensity_2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/ic_course_intensity" />
+
+    <View
+        android:id="@+id/v_intensity_3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/ic_course_intensity" />
+
+    <View
+        android:id="@+id/v_intensity_4"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/ic_course_intensity" />
+
+    <View
+        android:id="@+id/v_intensity_5"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/ic_course_intensity" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+        android:id="@+id/tv_intensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="24dp" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/course_unit_score"
+        android:layout_marginLeft="6dp"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+</LinearLayout>

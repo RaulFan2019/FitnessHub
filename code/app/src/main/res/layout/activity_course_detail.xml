@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="94dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="30dp" />
+
+    <View
+        style="@style/DividerTransparent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="408dp"
+        android:layout_marginTop="33dp"
+        android:orientation="horizontal">
+
+        <!-- 播放器 -->
+        <com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/video_view"
+            android:layout_width="725dp"
+            android:layout_height="408dp"/>
+
+        <!-- 视频信息 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="33dp"
+            android:orientation="vertical">
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/course_detail_description"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="83dp"
+                android:paddingTop="10dp"
+                android:textSize="15dp"
+                android:lines="3"
+                android:ellipsize="end"
+                android:textColor="@color/tv_secondly"/>
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/course_detail_producer"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+            <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                android:id="@+id/tv_producer"
+                android:layout_width="wrap_content"
+                android:layout_height="63dp"
+                android:paddingTop="10dp"
+                android:textSize="15dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/tv_secondly"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp"
+                    android:text="@string/course_detail_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+                    android:id="@+id/tv_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="24dp"/>
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tv_secondly"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/course_unit_min"/>
+            </LinearLayout>
+
+            <include layout="@layout/include_course_detail_intensity"/>
+            <include layout="@layout/include_course_detail_hot"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <include layout="@layout/include_course_detail_play"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" />
+    <!--200766-->
+</LinearLayout>

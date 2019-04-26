@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标题栏id -->
+    <item type="id"  name="main_menu_tab_title_sport" />
+    <item type="id"  name="main_menu_tab_title_report" />
+    <item type="id"  name="main_menu_tab_title_bind" />
+    <item type="id"  name="main_menu_tab_title_setting" />
+    <item type="id"  name="main_menu_tab_title_help" />
+
+
+    <item type="id"  name="main_menu_sport_1" />
+    <item type="id"  name="main_menu_sport_2" />
+    <item type="id"  name="main_menu_sport_3" />
+    <item type="id"  name="main_menu_sport_4" />
+    <item type="id"  name="main_menu_sport_5" />
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        style="@style/ReportSummaryListTitleTv"
+        android:layout_marginLeft="56dp"
+        android:layout_width="318dp"
+        android:text="@string/report_summary_list_title_sort" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        style="@style/ReportSummaryListTitleTv"
+        android:layout_width="148dp"
+        android:text="@string/report_summary_list_title_duration"/>
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        style="@style/ReportSummaryListTitleTv"
+        android:layout_width="158dp"
+        android:text="@string/report_summary_list_title_cal" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        style="@style/ReportSummaryListTitleTv"
+        android:layout_width="112dp"
+        android:text="@string/report_summary_list_title_point" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        style="@style/ReportSummaryListTitleTv"
+        android:layout_width="144dp"
+        android:text="@string/report_summary_list_title_avg_hr" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        style="@style/ReportSummaryListTitleTv"
+        android:layout_width="144dp"
+        android:text="@string/report_summary_list_title_max_hr" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        style="@style/ReportSummaryListTitleTv"
+        android:text="@string/report_summary_list_title_power" />
+</LinearLayout>

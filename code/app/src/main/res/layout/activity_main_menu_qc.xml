@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_menu"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <include layout="@layout/include_main_menu_navi_qc"/>
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.MainVp
+        android:id="@+id/vp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="160dp"
+        android:visibility="visible"/>
+
+    <com.open.androidtvwidget.view.MainUpView
+        android:id="@+id/upView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

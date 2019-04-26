@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="1003dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="49dp">
+
+        <TextView
+            android:id="@+id/tv_pre_min_ten"
+            android:layout_width="132dp"
+            android:layout_height="199dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="132dp"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/tv_pre_min"
+            android:layout_width="132dp"
+            android:layout_height="199dp"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="132dp"
+            android:text="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="80dp"
+            android:text="@string/unit_min_short"
+            android:textColor="@android:color/white"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/tv_pre_sec_ten"
+            android:layout_width="132dp"
+            android:layout_height="199dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="132dp"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/tv_pre_sec"
+            android:layout_width="132dp"
+            android:layout_height="199dp"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="132dp"
+            android:text="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="@string/unit_sec"
+            android:textColor="@android:color/white"
+            android:textSize="40dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

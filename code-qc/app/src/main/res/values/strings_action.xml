@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_set_network">设置网络</string>
+
+    <string name="action_next_step">下一步</string>
+    <string name="action_last_step">上一步</string>
+
+    <string name="action_confirm">确认</string>
+    <string name="action_cancel">取消</string>
+
+    <string name="action_know">知道了</string>
+
+    <string name="action_check_app_version">检查更新</string>
+</resources>

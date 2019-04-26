@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <!-- 运动页面 -->
+    <LinearLayout
+        android:id="@+id/ll_sport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingBottom="25dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="25dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_mover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:divider="@null" />
+        </LinearLayout>
+
+        <include layout="@layout/include_sport_group_bar" />
+    </LinearLayout>
+
+    <!-- 说明页面 -->
+    <LinearLayout
+        android:id="@+id/ll_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_sport_group_training_first_tip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalButton
+            android:id="@+id/btn_know"
+            style="@style/BtnAccent"
+            android:layout_marginTop="622dp"
+            android:text="@string/sport_group_training_know" />
+
+    </LinearLayout>
+</FrameLayout>

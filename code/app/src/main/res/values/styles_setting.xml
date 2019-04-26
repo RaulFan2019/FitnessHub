@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 设置页面基本布局 -->
+    <style name="SettingBaseLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/primary</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <!-- 设置页面头布局 -->
+    <style name="SettingTitleLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="SettingTitleMain">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">42dp</item>
+    </style>
+    <style name="SettingTitleSecondary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:textColor">@color/tv_secondly</item>
+        <item name="android:textSize">26dp</item>
+    </style>
+
+    <style name="SettingCreateLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:background">@drawable/selector_list_setting</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="SettingCreateBgLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:background">@drawable/bg_setting_create</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="SettingCreateIcon">
+        <item name="android:layout_width">54dp</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:background">@drawable/ic_setting_add</item>
+    </style>
+    <style name="SettingCreateTx">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:text">@string/setting_create</item>
+        <item name="android:textColor">@color/tv_secondly</item>
+        <item name="android:textSize">34dp</item>
+    </style>
+
+    <!-- 创建或修改HIIT设置页面 -->
+    <style name="SettingHIITCreateLine">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <style name="SettingHIITCreateName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">36dp</item>
+    </style>
+    <style name="SettingHIITCreateEditLayout">
+        <item name="android:layout_height">93dp</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:background">@drawable/bg_et_normal</item>
+    </style>
+    <style name="SettingHIITCreateEditEt">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">26dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+    </style>
+
+</resources>

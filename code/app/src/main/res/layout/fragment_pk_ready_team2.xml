@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pk_ready_team_2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/PkReadyTeamTitleLayout"
+        android:background="@drawable/bg_pk_ready_title_team_2">
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NumTextView
+            android:id="@+id/tv_team_2_count"
+            style="@style/PkReadyTeamTitleCountTx"
+            android:layout_marginLeft="184dp"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_ready_team_2"
+        android:layout_marginTop="46dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:divider="@null" />
+
+</LinearLayout>

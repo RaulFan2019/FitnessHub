@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="449dp"
+    android:layout_height="335dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="447dp"
+        android:layout_height="fill_parent"
+        android:layout_margin="1dp"
+        android:background="@drawable/bg_item_sport_mover_percent_0"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_mover_name"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:text="Raul"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_hr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="35dp"
+                    android:text="45"
+                    android:textColor="@android:color/white"
+                    android:textSize="190dp" />
+
+            </LinearLayout>
+
+            <!-- 个人信息 -->
+            <RelativeLayout
+                android:layout_width="157dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="29dp">
+
+                    <cn.hwh.fizo.tv.ui.widget.common.CircularImage
+                        android:id="@+id/iv_avatar"
+                        android:layout_width="104dp"
+                        android:layout_height="104dp"
+                        android:layout_gravity="center_horizontal|center_vertical" />
+
+                    <View
+                        android:id="@+id/v_mask"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_user_mask" />
+
+                    <TextView
+                        android:id="@+id/tv_ant"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textSize="17dp"
+                        android:textColor="@android:color/white"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_cal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="144dp"
+                    android:text="87"
+                    android:textColor="@android:color/white"
+                    android:textSize="28dp" />
+
+                <TextView
+                    android:id="@+id/tv_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="185dp"
+                    android:text="187"
+                    android:textColor="@android:color/white"
+                    android:textSize="28dp" />
+
+                <TextView
+                    android:id="@+id/tv_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="62dp"
+                    android:layout_marginTop="225dp"
+                    android:text="487"
+                    android:textColor="@android:color/white"
+                    android:textSize="28dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

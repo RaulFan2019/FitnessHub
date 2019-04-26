@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ReportBaseLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            android:id="@+id/tv_title"
+            style="@style/ReportTitle"
+            android:background="@drawable/bg_report_month_summary_title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/bg_shape_common_30_radius"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_report_summary_soft" />
+
+            <include layout="@layout/include_report_summary_list_title" />
+
+            <ListView
+                android:id="@+id/list"
+                style="@style/ListView"
+                android:layout_height="365dp"
+                android:listSelector="@drawable/selector_list_report"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 切换排序方式的提示 -->
+    <include layout="@layout/include_report_summary_soft_tip"/>
+    
+    <!-- 加载页面 -->
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.LoadingView
+        android:id="@+id/vLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

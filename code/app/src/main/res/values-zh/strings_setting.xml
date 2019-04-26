@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="setting_create">创建</string>
+
+    <string name="setting_hub_group_title">HUB组设置</string>
+    <string name="setting_hub_group_title_tip">同一组下，HUB之间的锻炼数据实时共享</string>
+    <string name="setting_hub_group_join">加入组</string>
+    <string name="setting_hub_group_edit_name">修改组名称</string>
+    <string name="setting_hub_group_delete">删除组</string>
+
+    <string name="setting_hiit_edit_name">编辑名称</string>
+    <string name="setting_hiit_delete">删除训练</string>
+
+    <string name="setting_hiit_title">间歇训练</string>
+
+    <string name="setting_hiit_title_create">创建间歇训练</string>
+
+    <string name="setting_hiit_create_name">名称</string>
+    <string name="setting_hiit_create_moving_time">训练时长</string>
+    <string name="setting_hiit_create_rest_time">休息时长</string>
+
+    <string name="setting_hiit_create_min">分</string>
+    <string name="setting_hiit_create_sec">秒</string>
+
+    <string name="setting_hiit_create_btn">完成</string>
+
+    <string name="setting_hiit_create_toast_input_name">Please Input Name!</string>
+    <string name="setting_hiit_create_toast_input_moving_time">Please Input Moving Time!</string>
+    <string name="setting_hiit_create_toast_input_rest_time">Please Input Rest Time!</string>
+    <string name="setting_hiit_create_toast_create_ok">Create Success!</string>
+</resources>

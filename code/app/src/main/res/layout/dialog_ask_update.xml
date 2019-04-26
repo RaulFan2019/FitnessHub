@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="779dp"
+    android:layout_height="463dp"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@drawable/bg_shape_common_30_radius"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.SpacingTextView
+        android:id="@+id/tv_vision_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:textSize="26dp" />
+
+    <View
+        style="@style/DividerH"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp" />
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        android:id="@+id/tv_version_info"
+        android:layout_width="739dp"
+        android:layout_height="249dp"
+        android:background="@drawable/bg_shape_line_normal"
+        android:lineSpacingExtra="2dp"
+        android:paddingLeft="19dp"
+        android:paddingTop="19dp"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalButton
+            android:id="@+id/btn_confirm"
+            style="@style/BtnDialog"
+            android:text="@string/dialog_btn_confirm" />
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalButton
+            android:id="@+id/btn_cancel"
+            style="@style/BtnAccent"
+            android:layout_marginLeft="46dp"
+            android:text="@string/dialog_btn_cancel" />
+
+    </LinearLayout>
+</LinearLayout>

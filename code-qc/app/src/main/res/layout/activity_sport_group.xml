@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <!-- 运动页面 -->
+    <LinearLayout
+        android:id="@+id/ll_sport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingBottom="26dp"
+            android:paddingLeft="78dp"
+            android:paddingRight="78dp"
+            android:paddingTop="26dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_mover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:divider="@null" />
+        </LinearLayout>
+
+        <include layout="@layout/include_sport_group_info" />
+    </LinearLayout>
+
+    <!-- 说明页面 -->
+    <LinearLayout
+        android:id="@+id/ll_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_sport_group_tips_first_start"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_know"
+            style="@style/BtnAccent"
+            android:layout_marginTop="622dp"
+            android:text="@string/action_know" />
+
+    </LinearLayout>
+
+    <!-- 询问页面 -->
+    <LinearLayout
+        android:id="@+id/ll_ask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A5000000"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="633dp"
+            android:layout_height="212dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/bg_shape_common_30_radius"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <cn.hwh.fizo.tv.ui.widget.common.SpacingTextView
+                android:id="@+id/tv_vision_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:text="@string/title_dlg_finish_sport_group"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="51dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    style="@style/BtnAccent"
+                    android:background="@drawable/btn_dlg"
+                    android:text="@string/action_confirm" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    style="@style/BtnAccent"
+                    android:layout_marginLeft="46dp"
+                    android:background="@drawable/btn_dlg"
+                    android:nextFocusLeft="@id/btn_confirm"
+                    android:text="@string/action_cancel" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

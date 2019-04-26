@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MainMenuItemMask">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">13dp</item>
+        <item name="android:background">@drawable/bg_main_menu_item_mask</item>
+    </style>
+
+    <!-- 主菜单的锻炼ITEM 样式 -->
+    <style name="MainMenuSportItemBase">
+        <item name="android:layout_width">333dp</item>
+        <item name="android:layout_height">467dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:nextFocusUp">@id/main_menu_tab_title_sport</item>
+    </style>
+    <style name="MainMenuSportItemImg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">13dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="MainMenuSportItemInfoLl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">13dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="MainMenuSportItemIc">
+        <item name="android:layout_width">99dp</item>
+        <item name="android:layout_height">99dp</item>
+        <item name="android:layout_marginTop">75dp</item>
+    </style>
+    <style name="MainMenuSportItemName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">32dp</item>
+        <item name="ttf_name">tvNormal.TTF</item>
+    </style>
+    <style name="MainMenuSportItemTip1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="MainMenuSportItemTip2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+
+    <!-- 主页菜单报告ITEM  -->
+    <style name="MainMenuReportItemV">
+        <item name="android:layout_width">333dp</item>
+        <item name="android:layout_height">467dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:nextFocusUp">@id/main_menu_tab_title_report</item>
+    </style>
+    <style name="MainMenuReportItemImg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">13dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="MainMenuReportItemInfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">13dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="MainMenuReportItemIc">
+        <item name="android:layout_width">99dp</item>
+        <item name="android:layout_height">99dp</item>
+        <item name="android:layout_marginTop">75dp</item>
+    </style>
+    <style name="MainMenuReportItemName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">32dp</item>
+    </style>
+    <style name="MainMenuReportItemTip1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+    <style name="MainMenuReportItemTip2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+
+    <!-- 主菜单 bind ITEM -->
+    <style name="MainMenuBindItemV">
+        <item name="android:layout_width">333dp</item>
+        <item name="android:layout_height">467dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:nextFocusUp">@id/main_menu_tab_title_bind</item>
+    </style>
+    <style name="MainMenuBindItemImg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">13dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="MainMenuBindItemInfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">13dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="MainMenuBindItemIc">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">107dp</item>
+        <item name="android:layout_marginTop">120dp</item>
+    </style>
+    <style name="MainMenuBindItemName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textSize">32dp</item>
+    </style>
+    <style name="MainMenuBindItemTip">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+
+    <!-- 主页面 setting  item-->
+    <style name="MainMenuSettingItemV">
+        <item name="android:layout_width">333dp</item>
+        <item name="android:layout_height">467dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:nextFocusUp">@id/main_menu_tab_title_setting</item>
+    </style>
+    <style name="MainMenuSettingItemImg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">13dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="MainMenuSettingItemInfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">13dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="MainMenuSettingItemIc">
+        <item name="android:layout_width">99dp</item>
+        <item name="android:layout_height">99dp</item>
+        <item name="android:layout_marginTop">120dp</item>
+    </style>
+    <style name="MainMenuSettingItemName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:textSize">32dp</item>
+    </style>
+
+
+    <!-- 主菜单QC ITEM -->
+    <style name="MainMenuQCItemV">
+        <item name="android:layout_width">333dp</item>
+        <item name="android:layout_height">467dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="MainMenuQCItemImg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">13dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="MainMenuQCItemInfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">13dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MainMenuQCItemIc">
+        <item name="android:layout_width">99dp</item>
+        <item name="android:layout_height">99dp</item>
+        <item name="android:layout_marginTop">120dp</item>
+    </style>
+
+    <style name="MainMenuQCItemName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:textSize">32dp</item>
+    </style>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SettingBaseLayout">
+
+    <!-- title -->
+    <LinearLayout
+        style="@style/SettingTitleLine">
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            style="@style/SettingTitleMain"
+            android:text="@string/setting_hiit_title" />
+    </LinearLayout>
+
+    <!-- 训练信息 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv"
+                style="@style/ListView"
+                android:listSelector="@drawable/selector_list_setting" />
+
+            <LinearLayout
+                android:id="@+id/ll_create"
+                style="@style/SettingCreateLayout">
+
+                <LinearLayout
+                    style="@style/SettingCreateBgLayout">
+
+                    <View
+                        style="@style/SettingCreateIcon"/>
+
+                    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                        style="@style/SettingCreateTx"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 加載頁面 -->
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.LoadingView
+            android:id="@+id/v_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

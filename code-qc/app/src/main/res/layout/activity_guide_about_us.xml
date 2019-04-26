@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_marginTop="64dp"
+        android:textColor="@android:color/white"
+        android:text="@string/title_about_us"/>
+
+    <LinearLayout
+        android:layout_width="779dp"
+        android:layout_height="463dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/bg_shape_common_30_radius"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <cn.hwh.fizo.tv.ui.widget.common.SpacingTextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:lineSpacingExtra="10dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="49dp"
+            android:text="@string/tip_about_us_content"/>
+
+        <View
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:layout_marginTop="97dp"
+            android:background="@drawable/ic_wechart"/>
+
+        <TextView
+            android:id="@+id/tv_tip_wechart_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="14dp"
+            android:text="@string/tip_about_us_wechart_1"/>
+
+        <TextView
+            android:id="@+id/tv_tip_wechart_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="13dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/tip_about_us_wechart_2"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:layout_marginTop="81dp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

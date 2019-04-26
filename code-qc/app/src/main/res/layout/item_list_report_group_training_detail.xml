@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="73dp"
+    android:minHeight="73dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="41dp">
+
+            <cn.hwh.fizo.tv.ui.widget.common.CircularImage
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@android:color/white" />
+
+            <cn.hwh.fizo.tv.ui.widget.common.CircularImage
+                android:id="@+id/iv_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/tv_cal"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp" />
+
+        <TextView
+            android:id="@+id/tv_point"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:layout_width="55dp"
+            android:layout_marginLeft="84dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_avg_hr"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:layout_width="73dp"
+            android:layout_marginLeft="69dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_max_hr"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:layout_width="73dp"
+            android:layout_marginLeft="73dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_effort"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:layout_marginLeft="77dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <View
+        style="@style/DividerH"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:alpha="0.5"/>
+
+</RelativeLayout>

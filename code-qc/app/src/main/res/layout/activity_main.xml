@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical">
+
+    <!-- 顶部导航栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:orientation="horizontal"
+        android:paddingLeft="41dp"
+        android:paddingRight="41dp">
+
+        <LinearLayout
+            android:id="@+id/ll_navi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_navi_sport"
+                style="@style/MainNavigationTv"
+                android:layout_marginLeft="41dp"
+                android:layout_marginTop="53dp"
+                android:text="@string/main_navi_sport" />
+
+            <TextView
+                android:id="@+id/tv_navi_report"
+                style="@style/MainNavigationTv"
+                android:layout_marginTop="53dp"
+                android:text="@string/main_navi_report" />
+
+            <TextView
+                android:id="@+id/tv_navi_training"
+                style="@style/MainNavigationTv"
+                android:layout_marginTop="53dp"
+                android:text="@string/main_navi_training" />
+
+            <TextView
+                android:id="@+id/tv_navi_bind"
+                style="@style/MainNavigationTv"
+                android:layout_marginTop="53dp"
+                android:text="@string/main_navi_bind" />
+
+            <TextView
+                android:id="@+id/tv_navi_setting"
+                style="@style/MainNavigationTv"
+                android:layout_marginTop="53dp"
+                android:text="@string/main_navi_setting" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:layout_marginTop="37dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <cn.hwh.fizo.tv.ui.widget.common.CircularImage
+                android:id="@+id/iv_store"
+                android:layout_width="85dp"
+                android:layout_height="85dp" />
+
+            <View
+                style="@style/DividerV"
+                android:layout_height="64dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp" />
+
+            <LinearLayout
+                android:layout_width="147dp"
+                android:layout_height="64dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tv_secondly"
+                    android:textSize="34dp" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/tv_secondly"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="36dp"
+            android:text="@string/tip_powered"
+            android:textColor="@color/tv_secondly"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_fragment_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="467dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="57dp"
+                android:clipToPadding="false"
+                android:focusable="false" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

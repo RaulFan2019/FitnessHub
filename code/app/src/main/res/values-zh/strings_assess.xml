@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="assess">评估</string>
+
+    <string name="assess_method_unit_min">分钟</string>
+
+    <string name="assess_content_preview">内容预览</string>
+
+    <string name="assess_scan">微信扫码加入</string>
+    <string name="assess_sgin_tip_1">当所有学员准备完成后</string>
+    <string name="assess_sgin_tip_2">请选择『开始测试』点击确认键开始</string>
+
+    <string name="assess_start">开始测试</string>
+
+    <string name="assess_sign_no_mover">目前无人参加测试!</string>
+    <string name="assess_sign_wait_video">等在视频下载...</string>
+
+    <string name="assess_preview_duration">预览用时 %d 分钟</string>
+
+    <string name="assess_is_exit">是否退出本次测试 ？</string>
+    <string name="assess_exit">退出</string>
+
+    <string name="assess_rest_ing">休息中...</string>
+    <string name="assess_rest_ing_tip">请尽量保持静止放松状态</string>
+
+    <string name="assess_method_rap_unit">拍/分钟</string>
+    <string name="assess_method_finish">测试结束</string>
+
+    <string name="assess_method_end_tip_1">扫码查看本次报告</string>
+    <string name="assess_method_end_tip_2">*扫描关注公众号</string>
+    <string name="assess_method_end_tip_3">自动获取锻炼效果推送和测试记录</string>
+    <string name="assess_method_end_finish">测试完成</string>
+
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_bg_main_menu"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <include layout="@layout/dark_include_main_menu_navi"/>
+
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.DarkMainMenuWaveLayout
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.MainVp
+        android:id="@+id/vp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="260dp"
+        android:visibility="visible"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="86dp"
+        android:layout_marginBottom="46dp"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_tv_main"
+            android:textSize="21dp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/dark_tv_secondly"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+</RelativeLayout>

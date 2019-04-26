@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_root"
+    android:layout_width="333dp"
+    android:layout_height="467dp"
+    android:layout_gravity="center"
+    android:layout_margin="6dp"
+    android:focusable="true">
+
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="18dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mask_main_rv"
+        android:layout_margin="18dp"/>
+
+</FrameLayout>

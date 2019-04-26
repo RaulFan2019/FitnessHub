@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.open.androidtvwidget.view.ReflectItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base"
+    style="@style/MainMenuReportItemV"
+    android:layout_marginLeft="17dp">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        style="@style/MainMenuReportItemImg" />
+
+    <LinearLayout style="@style/MainMenuReportItemInfo">
+
+        <View
+            android:id="@+id/v_ic"
+            style="@style/MainMenuReportItemIc" />
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            android:id="@+id/tv_name"
+            style="@style/MainMenuReportItemName"/>
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            android:id="@+id/tv_tip_1"
+            style="@style/MainMenuReportItemTip1" />
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            android:id="@+id/tv_tip_2"
+            style="@style/MainMenuReportItemTip2" />
+    </LinearLayout>
+
+    <View style="@style/MainMenuItemMask" />
+</com.open.androidtvwidget.view.ReflectItemView>

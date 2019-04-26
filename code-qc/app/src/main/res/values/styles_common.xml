@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Divider -->
+    <style name="DividerH">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2px</item>
+        <item name="android:background">@color/bg_divider</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="DividerV">
+        <item name="android:layout_width">2px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/bg_divider</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+
+      <!-- Button -->
+    <style name="BtnAccent">
+        <item name="android:layout_width">275dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:background">@drawable/btn_accent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ReportBaseLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            android:id="@+id/tv_title"
+            android:background="@drawable/bg_report_group_training_list_title"
+            style="@style/ReportTitle"/>
+
+        <!-- 团课信息 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/bg_shape_common_30_radius"
+            android:orientation="horizontal">
+
+            <!-- 学员列表信息 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <include layout="@layout/include_report_group_training_detail_title" />
+
+                <include layout="@layout/include_report_group_training_detail_list_title" />
+
+                <ListView
+                    android:id="@+id/lv_mover"
+                    style="@style/ListView"
+                    android:layout_height="432dp"
+                    android:listSelector="@drawable/selector_list_report_group_training_detail"/>
+
+            </LinearLayout>
+
+            <View style="@style/DividerV" />
+
+            <!-- 扫码获取锻炼报告信息 -->
+            <LinearLayout
+                android:layout_width="218dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="95dp"
+                    android:text="@string/report_group_training_detail_scan_to_see"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+
+                <RelativeLayout
+                    android:layout_width="170dp"
+                    android:layout_height="236dp"
+                    android:layout_marginTop="56dp"
+                    android:background="@drawable/bg_report_group_training_scan">
+
+                    <ImageView
+                        android:id="@+id/iv_code"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="2dp"
+                        android:background="@android:color/white" />
+                </RelativeLayout>
+
+                <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/report_group_training_detail_scan_tip"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 加載頁面 -->
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.LoadingView
+        android:id="@+id/v_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

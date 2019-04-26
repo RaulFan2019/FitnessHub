@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DarkMainMenuWave">
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">400dp</item>
+        <item name="android:background">@drawable/dark_bg_main_wave</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:alpha">0.1</item>
+    </style>
+
+
+    <!-- 主页卡片样式 -->
+    <style name="DarkMainMenuItemImg">
+        <item name="android:layout_width">248dp</item>
+        <item name="android:layout_height">361dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+    </style>
+
+    <style name="DarkMainMenuItemInfoLayout">
+        <item name="android:layout_width">248dp</item>
+        <item name="android:layout_height">361dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="DarkMainMenuItemInfoTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:layout_marginTop">128dp</item>
+    </style>
+
+    <style name="DarkMainMenuItemInfoDivider">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:background">@drawable/dark_divider_main_menu_item</item>
+    </style>
+
+    <style name="DarkMainMenuItemInfoTip">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">13.2dp</item>
+    </style>
+
+    <style name="DarkMainMenuItemFrame">
+        <item name="android:layout_width">202dp</item>
+        <item name="android:layout_height">300dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/dark_frame_main_menu_item</item>
+    </style>
+
+</resources>

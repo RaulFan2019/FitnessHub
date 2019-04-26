@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SettingBaseLayout">
+
+    <LinearLayout
+        style="@style/SettingTitleLine">
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            style="@style/SettingTitleMain"
+            android:text="@string/help"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_version"
+        style="@style/HelpSelectLl"
+        android:layout_marginTop="26dp">
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            style="@style/HelpSelectLlNameTv"
+            android:text="@string/help_soft_version" />
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            android:id="@+id/tv_version"
+            style="@style/HelpSelectLlValueTv" />
+
+        <View style="@style/HelpSelectArrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hw_version"
+        style="@style/HelpSelectLl"
+        android:layout_marginTop="26dp">
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            style="@style/HelpSelectLlNameTv"
+            android:text="@string/help_hw_version" />
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            android:id="@+id/tv_hw_version"
+            style="@style/HelpSelectLlValueTv" />
+
+        <View style="@style/HelpSelectArrow" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_device_test"
+        style="@style/HelpSelectLl"
+        android:layout_marginTop="26dp">
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            style="@style/HelpSelectLlNameTv"
+            android:text="@string/help_debug" />
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            style="@style/HelpSelectLlValueTv" />
+
+        <View style="@style/HelpSelectArrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_data_reset"
+        style="@style/HelpSelectLl"
+        android:layout_marginTop="26dp">
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            style="@style/HelpSelectLlNameTv"
+            android:text="@string/help_reset" />
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            style="@style/HelpSelectLlValueTv" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_about_us"
+        style="@style/HelpSelectLl"
+        android:layout_marginTop="26dp">
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            style="@style/HelpSelectLlNameTv"
+            android:text="@string/help_about_us" />
+
+        <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+            style="@style/HelpSelectLlValueTv" />
+
+        <View style="@style/HelpSelectArrow" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

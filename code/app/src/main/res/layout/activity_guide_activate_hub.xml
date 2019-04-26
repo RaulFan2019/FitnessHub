@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/GuideBaseLayout">
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalTextView
+        style="@style/GuideTitle"
+        android:text="@string/guide_activate_title"/>
+
+    <FrameLayout
+        android:id="@+id/fl_active_ing"
+        android:layout_width="779dp"
+        android:layout_height="463dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/bg_shape_common_30_radius">
+
+        <LinearLayout
+            android:layout_width="490dp"
+            android:layout_height="392dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/bg_guide_activate_qr_shadow">
+            <LinearLayout
+                android:layout_width="284dp"
+                android:layout_height="284dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                android:background="@color/accent">
+
+                <ImageView
+                    android:id="@+id/iv_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="393dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical">
+
+            <View
+                style="@style/DividerH"
+                android:layout_width="140dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/guide_activate_tip"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+            <View
+                style="@style/DividerH"
+                android:layout_width="140dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/v_active_ok"
+        android:layout_width="779dp"
+        android:layout_height="463dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/bg_guide_active_ok"
+        android:visibility="gone"/>
+
+    <cn.fizzo.hub.fitness.ui.widget.fizzo.NormalButton
+        android:id="@+id/btn_set_network"
+        style="@style/BtnAccent"
+        android:layout_marginTop="27dp"
+        android:text="@string/guide_activate_set_network"/>
+
+</LinearLayout>

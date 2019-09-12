@@ -150,7 +150,13 @@ public class ReportGroupTrainingDetailActivity extends BaseActivity {
                     @Override
                     public void onSuccess(BaseRE result) {
                         if (result.errorcode == BaseResponseParser.ERROR_CODE_NONE) {
+
+
+
                             mDetail = JSON.parseObject(result.result, GetGroupTrainingDetailRE.class);
+
+
+
                             mHandler.sendEmptyMessage(MSG_POST_OK);
                         } else {
                             Message msg = new Message();

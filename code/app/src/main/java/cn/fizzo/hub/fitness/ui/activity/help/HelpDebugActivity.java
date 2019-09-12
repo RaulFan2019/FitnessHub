@@ -40,17 +40,21 @@ public class HelpDebugActivity extends BaseActivity implements NotifyNewAntsList
 
     /* View */
     @BindView(R.id.iv_store)
-    CircularImage ivStore;//门店图片
+    CircularImage ivStore;                                         //门店图片
     @BindView(R.id.tv_store_name)
-    TextView tvStoreName;//门店名称
+    TextView tvStoreName;                                          //门店名称
+
     @BindView(R.id.tv_hub)
-    TextView tvHub;//HUB编号
+    TextView tvHub;                                                //HUB编号
+
     @BindView(R.id.tv_serial_no)
-    TextView tvSerialNo;//设备CPU序号
+    TextView tvSerialNo;                                           //设备CPU序号
     @BindView(R.id.tv_sensitivity)
-    TextView tvSensitivity;//灵敏度
+
+    TextView tvSensitivity;                                         //灵敏度
     @BindView(R.id.tv_sign)
-    TextView tvSign;//收到的ANT信号
+    TextView tvSign;                                                //收到的ANT信号
+
     @BindView(R.id.btn_sensitivity_up)
     Button btnUp;
 

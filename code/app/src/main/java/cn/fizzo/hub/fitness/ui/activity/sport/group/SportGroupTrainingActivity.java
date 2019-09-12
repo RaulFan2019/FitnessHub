@@ -402,8 +402,8 @@ public class SportGroupTrainingActivity extends BaseActivity {
      * @param countState
      */
     private void loadUIByStudentCount(final int countState) {
-        adapterTarget = new SportGroupTrainingMoverTargetRvAdapter(SportGroupTrainingActivity.this, listMover, mCountState, mPage,System.currentTimeMillis());
-        adapterPercent = new SportGroupTrainingMoverPercentRvAdapter(SportGroupTrainingActivity.this, listMover, mCountState, mPage,System.currentTimeMillis());
+        adapterTarget = new SportGroupTrainingMoverTargetRvAdapter(SportGroupTrainingActivity.this, listMover, mCountState, mPage,System.currentTimeMillis(),mConsoleDe.vendor);
+        adapterPercent = new SportGroupTrainingMoverPercentRvAdapter(SportGroupTrainingActivity.this, listMover, mCountState, mPage,System.currentTimeMillis(),mConsoleDe.vendor);
         if (countState == SportConfig.SHOW_COUNT_STATE_1) {
             rcvMover.setLayoutManager(new GridLayoutManager(SportGroupTrainingActivity.this, 1));
         } else if (countState == SportConfig.SHOW_COUNT_STATE_2) {

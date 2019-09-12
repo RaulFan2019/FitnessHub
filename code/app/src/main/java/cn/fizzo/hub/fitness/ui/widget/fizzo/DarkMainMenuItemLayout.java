@@ -19,7 +19,6 @@ import cn.fizzo.hub.fitness.entity.model.DarkMainItem;
  */
 public class DarkMainMenuItemLayout extends FrameLayout {
 
-
     FrameLayout flBase;
     View imgBg;
     TextView tvTitle;

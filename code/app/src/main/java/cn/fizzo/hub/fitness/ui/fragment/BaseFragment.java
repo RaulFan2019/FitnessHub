@@ -14,7 +14,7 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
 /**
- * Created by Administrator on 2016/7/3.
+ * Created by Raul.Fan on 2016/7/3.
  */
 public abstract class BaseFragment extends Fragment {
 
@@ -50,6 +50,11 @@ public abstract class BaseFragment extends Fragment {
         if (!mIsHidden) {
             onInVisible();
         }
+    }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
     }
 
     @Override

@@ -17,6 +17,7 @@ public class AppConfig {
     public static final boolean LOG_W = false;
     public static final boolean LOG_E = false;
 
+
     /**
      * 捕捉异常开关
      */

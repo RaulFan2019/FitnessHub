@@ -52,31 +52,31 @@ public class ReportSummaryDayActivity extends BaseActivity {
 
     /* views */
     @BindView(R.id.tv_title)
-    NormalTextView tvTitle;//日期标题
+    NormalTextView tvTitle;                                 //日期标题
 
     @BindView(R.id.tv_summary_value_duration)
-    NumTextView tvSummaryValueDuration;//时长统计值
+    NumTextView tvSummaryValueDuration;                     //时长统计值
     @BindView(R.id.tv_summary_value_cal)
-    NumTextView tvSummaryValueCal;//卡路里统计值
+    NumTextView tvSummaryValueCal;                          //卡路里统计值
     @BindView(R.id.tv_summary_value_point)
-    NumTextView tvSummaryValuePoint;//锻炼点数统计值
+    NumTextView tvSummaryValuePoint;                        //锻炼点数统计值
     @BindView(R.id.tv_summary_value_effort)
-    NumTextView tvSummaryValueEffort;//强度统计值
+    NumTextView tvSummaryValueEffort;                       //强度统计值
 
     @BindView(R.id.ll_soft_duration)
-    LinearLayout llSoftDuration;//时长排序布局
+    LinearLayout llSoftDuration;                            //时长排序布局
     @BindView(R.id.ll_soft_cal)
-    LinearLayout llSoftCal;//卡路里排序布局
+    LinearLayout llSoftCal;                                 //卡路里排序布局
     @BindView(R.id.ll_soft_point)
-    LinearLayout llSoftPoint;//点数排序布局
+    LinearLayout llSoftPoint;                               //点数排序布局
     @BindView(R.id.ll_soft_effort)
-    LinearLayout llSoftEffort;//强度排序布局
+    LinearLayout llSoftEffort;                              //强度排序布局
 
 
     @BindView(R.id.list)
-    ListView list;//列表
+    ListView list;                                           //列表
     @BindView(R.id.vLoading)
-    LoadingView vLoading;//缓冲加载页面
+    LoadingView vLoading;                                    //缓冲加载页面
 
 
     /* data */
@@ -99,6 +99,7 @@ public class ReportSummaryDayActivity extends BaseActivity {
             if (mSort < 4 && mGetSummaryDayRe != null) {
                 mSort++;
                 updateSummaryView();
+
                 return true;
             }
         }

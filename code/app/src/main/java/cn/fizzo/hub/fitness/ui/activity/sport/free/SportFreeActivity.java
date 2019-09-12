@@ -4,6 +4,7 @@ import android.content.pm.PackageManager;
 import android.os.Message;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -21,6 +22,7 @@ import org.xutils.x;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import butterknife.BindView;
 import cn.fizzo.hub.fitness.LocalApp;
@@ -34,6 +36,7 @@ import cn.fizzo.hub.fitness.data.DBDataStore;
 import cn.fizzo.hub.fitness.data.SPDataConsole;
 import cn.fizzo.hub.fitness.entity.db.CacheDE;
 import cn.fizzo.hub.fitness.entity.db.ConsoleDE;
+import cn.fizzo.hub.fitness.entity.db.MoverDE;
 import cn.fizzo.hub.fitness.entity.db.StoreDE;
 import cn.fizzo.hub.fitness.entity.event.ConsoleInfoChangeEE;
 import cn.fizzo.hub.fitness.entity.event.MoversCurrentEE;
@@ -74,6 +77,8 @@ public class SportFreeActivity extends BaseActivity {
 
     @BindView(R.id.iv_code)
     ImageView ivCode;//二维码
+    @BindView(R.id.tv_code_tip)
+    NormalTextView tvCodeTip;
     @BindView(R.id.tv_curr_mover_count)
     NumTextView tvCurrMoverCount;//当前正在锻炼的数量
     @BindView(R.id.tv_today_cal)
@@ -203,7 +208,7 @@ public class SportFreeActivity extends BaseActivity {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
 //        Log.v(TAG, "keyCode:" + keyCode);
-        //TEST
+//        TEST
 //        if (keyCode == KeyEvent.KEYCODE_DPAD_DOWN) {
 //            MoverCurrentDataME data = new MoverCurrentDataME(new MoverDE(11, "test", "", 1,
 //                    55,"", 220, 80, (30 + new Random().nextInt(120)),
@@ -213,11 +218,11 @@ public class SportFreeActivity extends BaseActivity {
 //                    0,System.currentTimeMillis() );
 //            listTestMover.add(data);
 //        }
-//        if (keyCode == KeyEvent.KEYCODE_DPAD_UP) {
-//            if (listTestMover.size() > 0) {
-//                listTestMover.remove(listTestMover.size() - 1);
-//            }
-//        }
+        if (keyCode == KeyEvent.KEYCODE_DPAD_UP) {
+            if (listTestMover.size() > 0) {
+                listTestMover.remove(listTestMover.size() - 1);
+            }
+        }
         //左右键改变心率显示模式
         if (keyCode == KeyEvent.KEYCODE_DPAD_RIGHT) {
             if (mAdapterMode != SportConfig.SHOW_TYPE_PERCENT){
@@ -275,9 +280,17 @@ public class SportFreeActivity extends BaseActivity {
      * 更新门店相关的信息和界面
      */
     private void updateStoreView() {
-        String code = "http://www.fizzo.cn/s/dbs/" + mStoreDe.storeId;
-        ivCode.setImageBitmap(QrCodeU.create2DCode(code));
-        ivBigCode.setImageBitmap(QrCodeU.create2DCode(code));
+        Log.v("updateStoreView","mConsoleDe.vendor:" + mConsoleDe.vendor);
+        if (mConsoleDe.vendor == SPConfig.Vendor.GEFEI){
+            ivCode.setImageResource(R.drawable.ic_vendor_gefei);
+            ivBigCode.setImageResource(R.drawable.ic_vendor_gefei);
+            tvCodeTip.setVisibility(View.INVISIBLE);
+        }else {
+            String code = "http://www.fizzo.cn/s/dbs/" + mStoreDe.storeId;
+            ivCode.setImageBitmap(QrCodeU.create2DCode(code));
+            ivBigCode.setImageBitmap(QrCodeU.create2DCode(code));
+            tvCodeTip.setVisibility(View.VISIBLE);
+        }
     }
 
     /**
@@ -346,8 +359,8 @@ public class SportFreeActivity extends BaseActivity {
         } else {
             rlClock.setVisibility(View.INVISIBLE);
             llSport.setVisibility(View.VISIBLE);
-            adapterTarget = new SportMoverTargetRvAdapter(SportFreeActivity.this, listMover, mCountState, mPage,System.currentTimeMillis());
-            adapterPercent = new SportMoverPercentRvAdapter(SportFreeActivity.this, listMover, mCountState, mPage,System.currentTimeMillis());
+            adapterTarget = new SportMoverTargetRvAdapter(SportFreeActivity.this, listMover, mCountState, mPage,System.currentTimeMillis(),mConsoleDe.vendor);
+            adapterPercent = new SportMoverPercentRvAdapter(SportFreeActivity.this, listMover, mCountState, mPage,System.currentTimeMillis(),mConsoleDe.vendor);
             if (countState == SportConfig.SHOW_COUNT_STATE_1) {
                 rcvMover.setLayoutManager(new GridLayoutManager(SportFreeActivity.this, 1));
             } else if (countState == SportConfig.SHOW_COUNT_STATE_2) {

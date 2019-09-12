@@ -43,6 +43,7 @@
                 android:orientation="vertical">
 
                 <FrameLayout
+                    android:id="@+id/fl_avatar"
                     android:layout_width="53dp"
                     android:layout_height="53dp"
                     android:layout_centerHorizontal="true"

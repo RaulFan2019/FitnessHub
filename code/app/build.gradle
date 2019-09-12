@@ -4,7 +4,7 @@ android {
     //Key
     signingConfigs {
         config {
-            storeFile file('D:/workspace/company porject/123Sports')
+            storeFile file('D:/FIZZO GitHub/FIZZO/FIZZO/123Sports')
             keyAlias '123sports'
             keyPassword '123Sports'
             storePassword '123Sports'
@@ -15,8 +15,8 @@ android {
         applicationId "cn.fizzo.hub.fitness"
         minSdkVersion 21
         targetSdkVersion 22
-        versionCode 404
-        versionName "FizzoFitness 4.0.4"
+        versionCode 405
+        versionName "FizzoFitness 4.0.5"
     }
     buildTypes {
         release {

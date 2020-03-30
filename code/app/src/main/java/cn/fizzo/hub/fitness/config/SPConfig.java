@@ -31,7 +31,6 @@ public class SPConfig {
     public class Provider{
         public static final int STANDARD = 1;//标准
         public static final int QC = 2; //青橙版
-
     }
 
     /**
@@ -42,7 +41,7 @@ public class SPConfig {
         public static final int WUXIPAOBA = 1;
         public static final int IWF = 2;//iwf展会
         public static final int BD = 3;//北大合作演示
-        public static final int GEFEI = 4;//歌斐
+        public static final int GEFEI = 5;//歌斐
     }
 
     public class TestMode{

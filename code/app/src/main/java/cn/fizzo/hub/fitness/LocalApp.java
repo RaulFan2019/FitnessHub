@@ -200,7 +200,7 @@ public class LocalApp extends MultiDexApplication implements NotifyGetHwVerListe
     }
 
     /**
-     * 获取设备CPU信息
+     * 获取设备CPU信息mHandler
      *
      * @return
      */

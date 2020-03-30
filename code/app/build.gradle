@@ -15,8 +15,8 @@ android {
         applicationId "cn.fizzo.hub.fitness"
         minSdkVersion 21
         targetSdkVersion 22
-        versionCode 405
-        versionName "FizzoFitness 4.0.5"
+        versionCode 407
+        versionName "FizzoFitness 4.0.7"
     }
     buildTypes {
         release {

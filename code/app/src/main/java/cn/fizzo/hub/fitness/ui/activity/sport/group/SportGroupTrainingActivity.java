@@ -335,8 +335,13 @@ public class SportGroupTrainingActivity extends BaseActivity {
      */
     private void updateStoreView() {
         String code = "http://www.fizzo.cn/s/dbs/" + mStoreDe.storeId;
-        ivCode.setImageBitmap(QrCodeU.create2DCode(code));
-        ivCodeIwf.setImageBitmap(QrCodeU.create2DCode(code));
+        if (mConsoleDe.vendor == SPConfig.Vendor.GEFEI){
+            ivCode.setImageResource(R.drawable.ic_vendor_gefei);
+            ivCodeIwf.setImageResource(R.drawable.ic_vendor_gefei);
+        }else {
+            ivCode.setImageBitmap(QrCodeU.create2DCode(code));
+            ivCodeIwf.setImageBitmap(QrCodeU.create2DCode(code));
+        }
     }
 
     /**

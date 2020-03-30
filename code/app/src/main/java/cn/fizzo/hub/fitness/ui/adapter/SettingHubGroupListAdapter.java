@@ -54,7 +54,7 @@ public class SettingHubGroupListAdapter extends BaseAdapter {
             mHolder = (ViewHolder) convertView.getTag();
         }
 
-        mHolder.tvName.setText(mData.get(position).name);
+        mHolder.tvName.setText("[" + mData.get(position).id + "]" + mData.get(position).name);
         if (mData.get(position).consolecount != 0) {
             mHolder.tvCount.setText(mData.get(position).consolecount + "");
         } else {

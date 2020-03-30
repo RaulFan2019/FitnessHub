@@ -107,6 +107,8 @@ public class SportFreeActivity extends BaseActivity {
     LinearLayout llVendor;
     @BindView(R.id.rl_clock)
     LinearLayout rlClock;
+    @BindView(R.id.tv_scan_tip)
+    NormalTextView tvScanTip;
 
     private StoreDE mStoreDe;
     private ConsoleDE mConsoleDe;
@@ -285,11 +287,13 @@ public class SportFreeActivity extends BaseActivity {
             ivCode.setImageResource(R.drawable.ic_vendor_gefei);
             ivBigCode.setImageResource(R.drawable.ic_vendor_gefei);
             tvCodeTip.setVisibility(View.INVISIBLE);
+            tvScanTip.setVisibility(View.INVISIBLE);
         }else {
             String code = "http://www.fizzo.cn/s/dbs/" + mStoreDe.storeId;
             ivCode.setImageBitmap(QrCodeU.create2DCode(code));
             ivBigCode.setImageBitmap(QrCodeU.create2DCode(code));
             tvCodeTip.setVisibility(View.VISIBLE);
+            tvScanTip.setVisibility(View.VISIBLE);
         }
     }
 
